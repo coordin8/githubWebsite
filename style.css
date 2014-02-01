@@ -1,0 +1,722 @@
+/* ===========================
+   ======= Body style ======== 
+   =========================== */
+   
+   body {
+   	background-image: url('img/newBG.jpg');
+   	color: #000305;
+   	font-size: 87.5%; /* Base font size: 14px */
+   	font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   	line-height: 1.429;
+   	margin: 0;
+   	padding: 0;
+   	text-align: left;
+   }
+
+   .body {
+   	clear: both; 
+   	margin: 0 auto; 
+   	width: 90%;
+   }
+
+/* ===========================
+   ========= Headings ======== 
+   =========================== */
+   h2 {font-size: 1.571em}	/* 22px */
+   h3 {font-size: 1.429em}	/* 20px */
+   h4 {font-size: 1.286em}	/* 18px */
+   h5 {font-size: 1.143em}	/* 16px */
+   h6 {font-size: 1em}		/* 14px */
+
+   h2, h3, h4, h5, h6 {
+   	font-weight: 400;
+   	line-height: 1.1;
+   	margin-bottom: .8em;
+   }
+
+   h2{
+   	font-weight:100;
+   	color: #CF5C3F;
+   	text-shadow: 1px 1px 1px gray;
+   	display: inline;
+   	text-decoration: none;
+   }
+
+   h6{
+   	font-weight:100;
+   	color: gray;
+   	font-style:italic;
+   	display: inline;
+   	text-decoration: none;
+   }
+
+/* ===========================
+   ======= Anchor style ====== 
+   =========================== */
+   a {
+   	outline: 0;
+   }
+
+
+
+   .mainContent a:link, a:visited {
+   	color: #CF5C3F;
+   	padding: 0 1px;
+   	text-decoration: none;
+   }
+
+   .mainContent a:hover, a:active {
+   	background-color: #CF5C3F;
+   	color: #fff;
+   	text-decoration: none;
+   }
+
+/* ===========================
+   ===== Main Navigation ===== 
+   =========================== */
+   
+   .mainHeader nav {
+
+   	background: #494949;
+   	font-size: 1.143em;
+   	height: 40px;
+   	line-height: 30px;
+   	margin: 0 auto 30px auto;
+   	text-align: center;
+   	border-radius: 5px;
+   	-moz-border-radius: 5px;
+   	-webkit-border-radius: 5px;
+   	text-shadow: 1px 1px 1px black;
+   }
+
+   .mainHeader nav ul {
+   	list-style: none; 
+   	margin: 0 auto;
+   }
+
+   .mainHeader nav ul .listFirst li{
+   	float: left; 
+   	display: inline; 
+   }
+
+   .mainHeader nav li .listTop a {
+   	float: right; 
+   	display: inline; 
+   }
+
+   .mainHeader nav .listFirst li a:link, .mainHeader nav .listFirst li a:visited {
+   	color: #fff;
+   	display: inline-block;
+   	height: 30px;
+   	padding: 5px 23px;
+   	text-decoration: none;
+   }
+
+   .mainHeader nav li .listTop a:link, .mainHeader nav li .listTop a:visited {
+   	/*
+   	color: #fff;
+   	display: inline-block;
+   	height: 32px;
+   	text-decoration: none;*/
+   }
+
+   .mainHeader nav .listFirst  li a:hover, .mainHeader nav a:active,
+   .mainHeader nav .active a:link, .mainHeader nav .active a:visited {
+   	
+   	background: #CF0000;
+   	color: #fff;
+   	text-shadow: none !important;
+   }
+
+   .mainHeader nav li .listTop a:hover{
+   	background-color: none;
+   	color: #fff;
+   	text-shadow: none !important;
+   }
+
+   .mainHeader nav li a {
+   	border-radius: 5px;
+   	-moz-border-radius: 5px;
+   	-webkit-border-radius: 5px;
+   }
+
+   .mainHeader img {
+   	width: 104.5%;
+   	height: auto;
+   	margin: 2% -4.5%;
+   }
+
+/* ===========================
+   ======= Content Area ====== 
+   =========================== */
+
+   .mainContent {
+
+   	overflow: hidden;
+   	line-height: 25px;
+   	border-radius: 5px;
+   	-moz-border-radius: 5px;
+   	-webkit-border-radius: 5px;
+   }
+
+   .topcontent {
+   	background-color: #FFF;
+   	border-radius: 5px;
+   	-moz-border-radius: 5px;
+   	-webkit-border-radius: 5px;	
+   	padding: 3% 5%;	
+   	margin-bottom: 3%;
+   }
+
+   .middlecontent {
+   	background-color: #FFF;
+   	border-radius: 5px;
+   	-moz-border-radius: 5px;
+   	-webkit-border-radius: 5px;	
+   	padding: 3% 5%;	
+   	margin-bottom: 3%;
+   }
+
+   .bottomcontent {
+   	background-color: #FFF;	
+   	border-radius: 5px;
+   	-moz-border-radius: 5px;
+   	-webkit-border-radius: 5px;	
+   	padding: 3% 5%;
+   }
+
+   .content {
+   	width: 68%;
+   	float: left;
+   	border-radius: 5px;
+   	-moz-border-radius: 5px;
+   	-webkit-border-radius: 5px;	
+   }
+
+   .post-info {
+     font-style: italic;
+     color: #999;
+     font-size: 85%;
+   }
+
+   /* ------------------------------------------------------------ */
+   /* ------------------------   Projects   ---------------------- */
+   /* ------------------------------------------------------------ */
+
+   .projectContent {
+    width: 100%;
+    float: left;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px; 
+  }
+
+  .subProjectContent{
+
+    text-align: left;
+    display: inline-block; 
+    background-color: #FFF;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px; 
+    padding: 3% 5%; 
+    margin-bottom: 3%;
+  }
+
+  .projectHeader{
+    text-align: center;
+  }
+
+  .subLeft{
+    float: left;
+    width: 60%;
+  }
+
+  .subLeft img {
+   	width: 95%;
+   	height: auto;
+   	margin: 0% 0%;
+   }
+
+
+  .subRight{
+    margin-top: -2.5%;
+    margin-bottom: -6%;
+    
+  }
+
+  .videowrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+  }
+
+  .videowrapper iframe,
+  .videowrapper object,
+  .videowrapper embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95%;
+    height: 97%;
+  }
+
+
+
+
+  
+
+  
+
+/* ===========================
+   ======== Sidebar ========== 
+   =========================== */
+
+   .top-sidebar {
+   	width: 24%;
+   	float: left;
+   	margin-left: 2%;
+   	border-radius: 5px;
+   	-moz-border-radius: 5px;
+   	-webkit-border-radius: 5px;	
+   	background-color: #FFF;	
+   	padding: 2% 3%;
+   	margin-bottom: 2%;
+   }
+
+
+
+   .top-sidebar img {
+   	width: 100%;
+   	height: auto;
+   	margin: 0% 0%;
+   }
+
+   .middle-sidebar {
+   	width: 24%;
+   	float: left;
+   	margin-left: 2%;
+   	border-radius: 5px;
+   	-moz-border-radius: 5px;
+   	-webkit-border-radius: 5px;	
+   	background-color: #FFF;	
+   	padding: 2% 3%;
+   	margin-bottom: 2%;
+   }
+
+
+   .middle-sidebar img {
+   	width: 100%;
+   	height: auto;
+   	margin: 0% 0%;
+   }
+
+   .bottom-sidebar {
+   	width: 24%;
+   	float: left;
+   	margin-left: 2%;
+   	border-radius: 5px;
+   	-moz-border-radius: 5px;
+   	-webkit-border-radius: 5px;	
+   	background-color: #FFF;	
+   	padding: 2% 3%;
+   }
+
+/* ==============================================================
+   =========================   Footer   =========================
+   ============================================================== */
+
+   .mainFooter {
+
+   	width: 100%;
+   	float: left;
+   	margin-top: 2%;
+   	margin-bottom: 2%;
+   	padding-left: 0;
+   	background: rgba( 60 , 60 , 60 , 1 );
+   	border-radius: 5px;
+   	-moz-border-radius: 5px;
+   	-webkit-border-radius: 5px;	
+   	color: #FFF;
+   	min-height:40px;
+   	text-shadow: 1px 1px 1px black;
+
+
+     box-shadow: inset 0 1px rgba(255, 255 ,255,  0.3 );
+     position: relative;
+
+
+     /*text-align: center;	*/
+   }
+
+
+
+   /*-------------------------   center image  -------------- */
+
+
+   div.nh{
+     position:absolute;
+     left:50%;
+     top: -6px;
+   }
+
+
+   .mainFooter #bottom-text {
+     float :left;
+     display: table-cell;
+     vertical-align: middle;
+     position:relative;
+     top: 8px;
+     left: 8px;
+     
+   }
+
+   .mainFooter #bottom-text a:link, a:visited {
+     color: #CF5C3F;
+     padding: 0 1px;
+     text-decoration: none;
+     
+   }
+
+   .mainFooter #bottom-text a:hover, a:active {
+     background-color: #CF5C3F;
+     color: #fff;
+     text-decoration: none;
+   }
+
+   .linkedin {
+
+     width: 32px;
+     height:32px;
+     display:inline;
+     vertical-align: middle;
+     background:transparent url('img/linkedin.png') center top no-repeat;
+     float: right;
+     position:relative;
+     top: 4px;
+     right: 8px;
+
+   }
+   .github {
+     width: 32px;
+     height:32px;
+     display:inline;
+     background:transparent url('img/github.png') center top no-repeat;
+     float: right;
+     position:relative;
+     top: 4px;
+     right: 16px;
+   }
+   .soundcloud {
+     width: 32px;
+     height:32px;
+     display:inline;
+     background:transparent url('img/soundcloud.png') center top no-repeat;
+     float: right;
+     position:relative;
+     top: 4px;
+     right: 24px;
+   }
+
+   .linkedin:hover {
+     background-position: 0 -32px;
+
+   }
+   .github:hover {
+     background-position: 0 -32px;
+   }
+   .soundcloud:hover {
+     background-position: 0 -32px;
+   }
+
+
+
+/* ==============================================================
+   ======================== Form Styling ========================
+   ============================================================== */
+
+   form    {
+
+
+   	width: 89.5%;
+   	float: left;
+   	border-radius: 5px;
+   	-moz-border-radius: 5px;
+   	-webkit-border-radius: 5px;	
+
+   	background-color: #FFF;
+   	padding: 3% 5%;	
+   	margin-bottom: 1%;
+
+
+   	background: -webkit-gradient(linear, bottom, left 175px, from(#CCCCCC), to(#EEEEEE));
+   	background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+
+   	line-height: 24px;
+   	text-decoration: none;
+   	border: 1px solid #999;
+   	border: inset 1px solid #333;
+   	-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+   	-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+   	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+   }
+
+   input {
+   	width:99%;
+   	display:block;
+   	border: 1px solid #999;
+   	height: 25px;
+   	-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+   	-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+   	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+   }
+
+   textarea#feedback {
+   	width:99%;
+   	height:150px;
+   }
+
+   textarea.message {
+   	display:block;
+   }
+
+   input[type="button"]{
+
+   	width: 30%;
+   	float: right;
+
+   	background:#CF5C3F;
+   	color:#fff;
+   	height:30px;
+   	-webkit-border-radius: 5px;
+   	-moz-border-radius: 5px;
+   	border-radius: 5px;
+   	border: 2px solid #999;
+
+   }
+
+   input[type="button"]:hover {
+   	background:#fff;
+   	color:#CF5C3F;
+   }
+
+   textarea:focus, input:focus {
+   	border: 1px solid #CF5C3F;
+   }
+
+
+
+
+/* ==============================================================
+   ======================= Media Queries ========================
+   ============================================================== */
+
+   @media only screen and (min-width : 150px) and (max-width : 780px)
+   {
+   	.body {
+   		clear: both; 
+   		margin: 0 auto; 
+   		width: 90%;
+   		font-size: 90%;
+   	}
+
+
+    /*  -----------------------------------------------------*/
+    /*  ----------    begining of main header   -------------*/
+    .mainHeader nav {
+
+     background: #494949;
+     font-size: 1.143em;
+     height: 200px;
+     line-height: 30px;
+     margin-bottom: 0;
+     border-radius: 5px;
+     -moz-border-radius: 5px;
+     -webkit-border-radius: 5px;
+     text-align:center;
+
+   }
+
+   .mainHeader nav ul{
+     list-style: none; 
+     margin: 0 auto;
+     padding-left: 0;
+     vertical-align:middle;
+     display:inline;
+   }
+
+   .mainHeader nav ul  li .listTop{
+     display:inline-block;
+     position:relative;
+     left: 16px;
+   }
+
+
+   .mainHeader nav li {
+     width: 100%;
+   }
+
+   .mainHeader nav .listFirst li a:link, .mainHeader nav .listFirst li a:visited {
+     color: #FFF;
+     display: block;
+     height: 30px;
+     padding: 5px 0;
+     text-decoration: none;
+   }
+
+   .mainHeader nav a:active,
+   .mainHeader nav .active a:link, .mainHeader nav .active a:visited {
+     background: #CF0000;
+     color: #fff;
+     text-shadow: none !important;
+   }
+
+   .mainHeader nav li a {
+     border-radius: 5px;
+     -moz-border-radius: 5px;
+     -webkit-border-radius: 5px;
+
+     border-radius: 5px;
+     -moz-border-radius: 5px;
+     -webkit-border-radius: 5px;
+   }
+
+   .mainHeader img {
+     width: 104.5%;
+     height: auto;
+     margin: 2% -4.5%;
+   }
+   /*  ----------    begining of main content   -------------*/
+
+   .mainContent {
+     overflow: hidden;
+     line-height: 25px;
+     border-radius: 5px;
+     -moz-border-radius: 5px;
+     -webkit-border-radius: 5px;
+     margin-top: 4%;
+     margin-bottom: 2%;
+   }
+
+   .topcontent {
+     background-color: #FFF;
+     border-radius: 5px;
+     -moz-border-radius: 5px;
+     -webkit-border-radius: 5px;	
+     padding: 2% 5%;
+     margin-bottom: 4%;
+   }
+
+   .bottomcontent {
+     background-color: #FFF;	
+     border-radius: 5px;
+     -moz-border-radius: 5px;
+     -webkit-border-radius: 5px;	
+     padding: 2% 5%;
+   }
+
+   .content {
+     width: 100%;
+     float: left;
+     border-radius: 5px;
+     -moz-border-radius: 5px;
+     -webkit-border-radius: 5px;	
+   }	
+
+   .post-info {
+     display: none;
+   }
+
+   .top-sidebar {
+     width: 86%;
+     float: left;
+     border-radius: 5px;
+     -moz-border-radius: 5px;
+     -webkit-border-radius: 5px;	
+     background-color: #FFF;	
+     margin-top: 4%;
+     margin-left: 0;
+     padding: 0 7%;
+     margin-bottom: 0;		
+   }
+
+   .top-sidebar p {
+     width: 90%;
+   }
+
+   .middle-sidebar {
+     width: 86%;
+     float: left;
+     border-radius: 5px;
+     -moz-border-radius: 5px;
+     -webkit-border-radius: 5px;	
+     background-color: #FFF;	
+     margin-top: 4%;
+     margin-left: 0;
+     padding: 0 7%;
+     margin-bottom: 0;	
+   }
+
+   .middle-sidebar p {
+     width: 90%;
+   }
+
+   .bottom-sidebar {
+     width: 86%;
+     float: left;
+     border-radius: 5px;
+     -moz-border-radius: 5px;
+     -webkit-border-radius: 5px;	
+     background-color: #FFF;	
+     margin-top: 4%;
+     margin-left: 0%;
+     padding: 0 7%;
+     margin-bottom: 1%;
+   }
+
+   .bottom-sidebar p {
+     width: 90%;
+   }
+
+   .mainFooter {
+     text-align: center;
+     width: 100%;
+     float: left;
+     margin: 2% 0%;
+     padding-left: 0;
+     background-color: #494949;
+     border-radius: 5px;
+     -moz-border-radius: 5px;
+     -webkit-border-radius: 5px;	
+     color: #FFF;	
+   }
+
+   .mainFooter p {
+     width: 86%;
+     margin: 2% auto;
+   }
+
+   .mainFooter .linkedin{visibility:hidden;}
+   .mainFooter .github{visibility:hidden;}
+   .mainFooter .soundcloud{visibility:hidden;}
+
+   div.nh{
+     margin: .5% 20%;
+   }
+
+
+   /* ------------------------------------------------------------ */
+   /* ------------------------   Projects   ---------------------- */
+   /* ------------------------------------------------------------ */
+
+  .subLeft{
+    float: left;
+    width: 100%;
+  }
+
+
+
+
+
+
+}
