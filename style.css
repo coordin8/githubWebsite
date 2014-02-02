@@ -112,14 +112,6 @@
    	text-decoration: none;
    }
 
-   .mainHeader nav li .listTop a:link, .mainHeader nav li .listTop a:visited {
-   	/*
-   	color: #fff;
-   	display: inline-block;
-   	height: 32px;
-   	text-decoration: none;*/
-   }
-
    .mainHeader nav .listFirst  li a:hover, .mainHeader nav a:active,
    .mainHeader nav .active a:link, .mainHeader nav .active a:visited {
    	
