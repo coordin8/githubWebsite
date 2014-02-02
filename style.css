@@ -3,7 +3,7 @@
    =========================== */
    
    body {
-   	background-image: url('img/mos.png');
+   	background-image: url('img/newBG.jpg');
    	color: #000305;
    	font-size: 87.5%; /* Base font size: 14px */
    	font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -71,9 +71,9 @@
    	text-decoration: none;
    }
 
-/* ===========================
-   ===== Main Navigation ===== 
-   =========================== */
+   /* ---------------------------------------------------------- */
+   /* ---------------------   Main Header   -------------------- */
+   /* ---------------------------------------------------------- */
    
    .mainHeader nav {
 
@@ -138,9 +138,9 @@
    	margin: 2% -4.5%;
    }
 
-/* ===========================
-   ======= Content Area ====== 
-   =========================== */
+   /* ------------------------------------------------------------ */
+   /* -------------------------   Conent   ----------------------- */
+   /* ------------------------------------------------------------ */
 
    .mainContent {
 
@@ -178,7 +178,7 @@
    }
 
    .content {
-   	width: 68%;
+   	width: 100%;
    	float: left;
    	border-radius: 5px;
    	-moz-border-radius: 5px;
@@ -225,10 +225,10 @@
   }
 
   .subLeft img {
-   	width: 95%;
-   	height: auto;
-   	margin: 0% 0%;
-   }
+    width: 95%;
+    height: auto;
+    margin: 0% 0%;
+  }
 
 
   .subRight{
@@ -701,7 +701,7 @@
    /* ------------------------   Projects   ---------------------- */
    /* ------------------------------------------------------------ */
 
-  .subLeft{
+   .subLeft{
     float: left;
     width: 100%;
   }
