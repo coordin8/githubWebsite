@@ -59,6 +59,8 @@
 
 
 
+
+
    .mainContent a:link, a:visited {
    	color: #CF5C3F;
    	padding: 0 1px;
@@ -169,14 +171,6 @@
    	margin-bottom: 3%;
    }
 
-   .bottomcontent {
-   	background-color: #FFF;	
-   	border-radius: 5px;
-   	-moz-border-radius: 5px;
-   	-webkit-border-radius: 5px;	
-   	padding: 3% 5%;
-   }
-
    .content {
    	width: 100%;
    	float: left;
@@ -185,134 +179,77 @@
    	-webkit-border-radius: 5px;	
    }
 
-   .post-info {
-     font-style: italic;
-     color: #999;
-     font-size: 85%;
-   }
 
-   /* ------------------------------------------------------------ */
-   /* ------------------------   Projects   ---------------------- */
-   /* ------------------------------------------------------------ */
+  .post-info {
+   font-style: italic;
+   color: #999;
+   font-size: 85%;
+ }
 
-   .projectContent {
-    width: 100%;
-    float: left;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px; 
-  }
+ /* ------------------------------------------------------------ */
+ /* ------------------------   Projects   ---------------------- */
+ /* ------------------------------------------------------------ */
 
-  .subProjectContent{
+ .projectContent {
+  width: 100%;
+  float: left;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px; 
+}
 
-    text-align: left;
-    display: inline-block; 
-    background-color: #FFF;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px; 
-    padding: 3% 5%; 
-    margin-bottom: 3%;
-  }
+.subProjectContent{
 
-  .projectHeader{
-    text-align: center;
-  }
+  text-align: left;
+  display: inline-block; 
+  background-color: #FFF;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px; 
+  padding: 3% 5%; 
+  margin-bottom: 3%;
+}
 
-  .subLeft{
-    float: left;
-    width: 60%;
-  }
+.projectHeader{
+  text-align: center;
+}
 
-  .subLeft img {
-    width: 95%;
-    height: auto;
-    margin: 0% 0%;
-  }
+.subLeft{
+  float: left;
+  width: 60%;
+}
 
-
-  .subRight{
-    margin-top: -2.5%;
-    margin-bottom: -6%;
-    
-  }
-
-  .videowrapper {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 30px; height: 0; overflow: hidden;
-  }
-
-  .videowrapper iframe,
-  .videowrapper object,
-  .videowrapper embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 95%;
-    height: 97%;
-  }
+.subLeft img {
+  width: 95%;
+  height: auto;
+  margin: 0% 0%;
+}
 
 
+.subRight{
+  margin-top: -2.5%;
+  margin-bottom: -6%;
 
+}
 
-  
+.videowrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px; height: 0; overflow: hidden;
+}
 
-  
-
-/* ===========================
-   ======== Sidebar ========== 
-   =========================== */
-
-   .top-sidebar {
-   	width: 24%;
-   	float: left;
-   	margin-left: 2%;
-   	border-radius: 5px;
-   	-moz-border-radius: 5px;
-   	-webkit-border-radius: 5px;	
-   	background-color: #FFF;	
-   	padding: 2% 3%;
-   	margin-bottom: 2%;
-   }
+.videowrapper iframe,
+.videowrapper object,
+.videowrapper embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 95%;
+  height: 97%;
+}
 
 
 
-   .top-sidebar img {
-   	width: 100%;
-   	height: auto;
-   	margin: 0% 0%;
-   }
-
-   .middle-sidebar {
-   	width: 24%;
-   	float: left;
-   	margin-left: 2%;
-   	border-radius: 5px;
-   	-moz-border-radius: 5px;
-   	-webkit-border-radius: 5px;	
-   	background-color: #FFF;	
-   	padding: 2% 3%;
-   	margin-bottom: 2%;
-   }
-
-
-   .middle-sidebar img {
-   	width: 100%;
-   	height: auto;
-   	margin: 0% 0%;
-   }
-
-   .bottom-sidebar {
-   	width: 24%;
-   	float: left;
-   	margin-left: 2%;
-   	border-radius: 5px;
-   	-moz-border-radius: 5px;
-   	-webkit-border-radius: 5px;	
-   	background-color: #FFF;	
-   	padding: 2% 3%;
-   }
 
 /* ==============================================================
    =========================   Footer   =========================
@@ -337,8 +274,6 @@
      box-shadow: inset 0 1px rgba(255, 255 ,255,  0.3 );
      position: relative;
 
-
-     /*text-align: center;	*/
    }
 
 
@@ -427,6 +362,35 @@
    ======================== Form Styling ========================
    ============================================================== */
 
+    .contactForm {
+    width: 66%;
+    float: left;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px; 
+  }
+
+
+   .top-sidebar {
+    width: 26%;
+    float: left;
+    margin-left: 2%;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px; 
+    background-color: #FFF; 
+    padding: 2% 3%;
+    margin-bottom: 2%;
+   }
+
+
+
+   .top-sidebar img {
+    width: 100%;
+    height: auto;
+    margin: 0% 0%;
+   }
+
    form    {
 
 
@@ -465,7 +429,7 @@
 
    textarea#feedback {
    	width:99%;
-   	height:150px;
+   	height:200px;
    }
 
    textarea.message {
@@ -615,100 +579,70 @@
      -webkit-border-radius: 5px;	
    }	
 
-   .post-info {
-     display: none;
-   }
-
-   .top-sidebar {
-     width: 86%;
-     float: left;
-     border-radius: 5px;
-     -moz-border-radius: 5px;
-     -webkit-border-radius: 5px;	
-     background-color: #FFF;	
-     margin-top: 4%;
-     margin-left: 0;
-     padding: 0 7%;
-     margin-bottom: 0;		
-   }
-
-   .top-sidebar p {
-     width: 90%;
-   }
-
-   .middle-sidebar {
-     width: 86%;
-     float: left;
-     border-radius: 5px;
-     -moz-border-radius: 5px;
-     -webkit-border-radius: 5px;	
-     background-color: #FFF;	
-     margin-top: 4%;
-     margin-left: 0;
-     padding: 0 7%;
-     margin-bottom: 0;	
-   }
-
-   .middle-sidebar p {
-     width: 90%;
-   }
-
-   .bottom-sidebar {
-     width: 86%;
-     float: left;
-     border-radius: 5px;
-     -moz-border-radius: 5px;
-     -webkit-border-radius: 5px;	
-     background-color: #FFF;	
-     margin-top: 4%;
-     margin-left: 0%;
-     padding: 0 7%;
-     margin-bottom: 1%;
-   }
-
-   .bottom-sidebar p {
-     width: 90%;
-   }
-
-   .mainFooter {
-     text-align: center;
-     width: 100%;
-     float: left;
-     margin: 2% 0%;
-     padding-left: 0;
-     background-color: #494949;
-     border-radius: 5px;
-     -moz-border-radius: 5px;
-     -webkit-border-radius: 5px;	
-     color: #FFF;	
-   }
-
-   .mainFooter p {
-     width: 86%;
-     margin: 2% auto;
-   }
-
-   .mainFooter .linkedin{visibility:hidden;}
-   .mainFooter .github{visibility:hidden;}
-   .mainFooter .soundcloud{visibility:hidden;}
-
-   div.nh{
-     margin: .5% 20%;
-   }
-
-
-   /* ------------------------------------------------------------ */
-   /* ------------------------   Projects   ---------------------- */
-   /* ------------------------------------------------------------ */
-
-   .subLeft{
-    float: left;
+   .contactForm {
     width: 100%;
+    float: left;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px; 
   }
 
+  .post-info {
+   display: none;
+ }
+
+ .top-sidebar {
+   width: 86%;
+   float: left;
+   border-radius: 5px;
+   -moz-border-radius: 5px;
+   -webkit-border-radius: 5px;	
+   background-color: #FFF;	
+   margin-top: 4%;
+   margin-left: 0;
+   padding: 0 7%;
+   margin-bottom: 0;		
+ }
+
+ .top-sidebar p {
+   width: 90%;
+ }
+
+ .mainFooter {
+   text-align: center;
+   width: 100%;
+   float: left;
+   margin: 2% 0%;
+   padding-left: 0;
+   background-color: #494949;
+   border-radius: 5px;
+   -moz-border-radius: 5px;
+   -webkit-border-radius: 5px;	
+   color: #FFF;	
+ }
+
+ .mainFooter p {
+   width: 86%;
+   margin: 2% auto;
+ }
+
+ .mainFooter .linkedin{visibility:hidden;}
+ .mainFooter .github{visibility:hidden;}
+ .mainFooter .soundcloud{visibility:hidden;}
+
+ div.nh{
+   margin: .5% 20%;
+ }
 
 
+ /* ------------------------------------------------------------ */
+ /* ------------------------   Projects   ---------------------- */
+ /* ------------------------------------------------------------ */
 
+ .subLeft{
+  float: left;
+  width: 100%;
+}
 
 
 }
