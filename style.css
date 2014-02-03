@@ -3,58 +3,58 @@
    =========================== */
    
    body {
-   	background-image: url('img/newBG.jpg');
-   	color: #000305;
-   	font-size: 87.5%; /* Base font size: 14px */
-   	font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-   	line-height: 1.429;
-   	margin: 0;
-   	padding: 0;
-   	text-align: left;
+    background-image: url('img/newBG.jpg');
+    color: #000305;
+    font-size: 87.5%; /* Base font size: 14px */
+    font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.429;
+    margin: 0;
+    padding: 0;
+    text-align: left;
    }
 
    .body {
-   	clear: both; 
-   	margin: 0 auto; 
-   	width: 90%;
+    clear: both; 
+    margin: 0 auto; 
+    width: 90%;
    }
 
 /* ===========================
    ========= Headings ======== 
    =========================== */
-   h2 {font-size: 1.571em}	/* 22px */
-   h3 {font-size: 1.429em}	/* 20px */
-   h4 {font-size: 1.286em}	/* 18px */
-   h5 {font-size: 1.143em}	/* 16px */
-   h6 {font-size: 1em}		/* 14px */
+   h2 {font-size: 1.571em}  /* 22px */
+   h3 {font-size: 1.429em}  /* 20px */
+   h4 {font-size: 1.286em}  /* 18px */
+   h5 {font-size: 1.143em}  /* 16px */
+   h6 {font-size: 1em}    /* 14px */
 
    h2, h3, h4, h5, h6 {
-   	font-weight: 400;
-   	line-height: 1.1;
-   	margin-bottom: .8em;
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: .8em;
    }
 
    h2{
-   	font-weight:100;
-   	color: #CF5C3F;
-   	text-shadow: 1px 1px 1px gray;
-   	display: inline;
-   	text-decoration: none;
+    font-weight:100;
+    color: #CF5C3F;
+    text-shadow: 1px 1px 1px gray;
+    display: inline;
+    text-decoration: none;
    }
 
    h6{
-   	font-weight:100;
-   	color: gray;
-   	font-style:italic;
-   	display: inline;
-   	text-decoration: none;
+    font-weight:100;
+    color: gray;
+    font-style:italic;
+    display: inline;
+    text-decoration: none;
    }
 
 /* ===========================
    ======= Anchor style ====== 
    =========================== */
    a {
-   	outline: 0;
+    outline: 0;
    }
 
 
@@ -62,15 +62,15 @@
 
 
    .mainContent a:link, a:visited {
-   	color: #CF5C3F;
-   	padding: 0 1px;
-   	text-decoration: none;
+    color: #CF5C3F;
+    padding: 0 1px;
+    text-decoration: none;
    }
 
    .mainContent a:hover, a:active {
-   	background-color: #CF5C3F;
-   	color: #fff;
-   	text-decoration: none;
+    background-color: #CF5C3F;
+    color: #fff;
+    text-decoration: none;
    }
 
    /* ---------------------------------------------------------- */
@@ -79,65 +79,65 @@
    
    .mainHeader nav {
 
-   	background: #494949;
-   	font-size: 1.143em;
-   	height: 40px;
-   	line-height: 30px;
-   	margin: 0 auto 30px auto;
-   	text-align: center;
-   	border-radius: 5px;
-   	-moz-border-radius: 5px;
-   	-webkit-border-radius: 5px;
-   	text-shadow: 1px 1px 1px black;
+    background: #494949;
+    font-size: 1.143em;
+    height: 40px;
+    line-height: 30px;
+    margin: 0 auto 30px auto;
+    text-align: center;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    text-shadow: 1px 1px 1px black;
    }
 
    .mainHeader nav ul {
-   	list-style: none; 
-   	margin: 0 auto;
+    list-style: none; 
+    margin: 0 auto;
    }
 
    .mainHeader nav ul .listFirst li{
-   	float: left; 
-   	display: inline; 
+    float: left; 
+    display: inline; 
    }
 
    .mainHeader nav li .listTop a {
-   	float: right; 
-   	display: inline; 
+    float: right; 
+    display: inline; 
    }
 
    .mainHeader nav .listFirst li a:link, .mainHeader nav .listFirst li a:visited {
-   	color: #fff;
-   	display: inline-block;
-   	height: 30px;
-   	padding: 5px 23px;
-   	text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    height: 30px;
+    padding: 5px 23px;
+    text-decoration: none;
    }
 
    .mainHeader nav .listFirst  li a:hover, .mainHeader nav a:active,
    .mainHeader nav .active a:link, .mainHeader nav .active a:visited {
-   	
-   	background: #CF0000;
-   	color: #fff;
-   	text-shadow: none !important;
+    
+    background: #CF0000;
+    color: #fff;
+    text-shadow: none !important;
    }
 
    .mainHeader nav li .listTop a:hover{
-   	background-color: none;
-   	color: #fff;
-   	text-shadow: none !important;
+    background-color: none;
+    color: #fff;
+    text-shadow: none !important;
    }
 
    .mainHeader nav li a {
-   	border-radius: 5px;
-   	-moz-border-radius: 5px;
-   	-webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
    }
 
    .mainHeader img {
-   	width: 104.5%;
-   	height: auto;
-   	margin: 2% -4.5%;
+    width: 104.5%;
+    height: auto;
+    margin: 2% -4.5%;
    }
 
    /* ------------------------------------------------------------ */
@@ -146,37 +146,37 @@
 
    .mainContent {
 
-   	overflow: hidden;
-   	line-height: 25px;
-   	border-radius: 5px;
-   	-moz-border-radius: 5px;
-   	-webkit-border-radius: 5px;
+    overflow: hidden;
+    line-height: 25px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
    }
 
    .topcontent {
-   	background-color: #FFF;
-   	border-radius: 5px;
-   	-moz-border-radius: 5px;
-   	-webkit-border-radius: 5px;	
-   	padding: 3% 5%;	
-   	margin-bottom: 3%;
+    background-color: #FFF;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px; 
+    padding: 3% 5%; 
+    margin-bottom: 3%;
    }
 
    .middlecontent {
-   	background-color: #FFF;
-   	border-radius: 5px;
-   	-moz-border-radius: 5px;
-   	-webkit-border-radius: 5px;	
-   	padding: 3% 5%;	
-   	margin-bottom: 3%;
+    background-color: #FFF;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px; 
+    padding: 3% 5%; 
+    margin-bottom: 3%;
    }
 
    .content {
-   	width: 100%;
-   	float: left;
-   	border-radius: 5px;
-   	-moz-border-radius: 5px;
-   	-webkit-border-radius: 5px;	
+    width: 100%;
+    float: left;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px; 
    }
 
 
@@ -279,18 +279,18 @@
 
    .mainFooter {
 
-   	width: 100%;
-   	float: left;
-   	margin-top: 2%;
-   	margin-bottom: 2%;
-   	padding-left: 0;
-   	background: rgba( 60 , 60 , 60 , 1 );
-   	border-radius: 5px;
-   	-moz-border-radius: 5px;
-   	-webkit-border-radius: 5px;	
-   	color: #FFF;
-   	min-height:40px;
-   	text-shadow: 1px 1px 1px black;
+    width: 100%;
+    float: left;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding-left: 0;
+    background: rgba( 60 , 60 , 60 , 1 );
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px; 
+    color: #FFF;
+    min-height:40px;
+    text-shadow: 1px 1px 1px black;
 
 
 
@@ -449,12 +449,12 @@
 
    @media only screen and (min-width : 150px) and (max-width : 780px)
    {
-   	.body {
-   		clear: both; 
-   		margin: 0 auto; 
-   		width: 90%;
-   		font-size: 90%;
-   	}
+    .body {
+      clear: both; 
+      margin: 0 auto; 
+      width: 90%;
+      font-size: 90%;
+    }
 
 
     /*  -----------------------------------------------------*/
@@ -538,16 +538,16 @@
      background-color: #FFF;
      border-radius: 5px;
      -moz-border-radius: 5px;
-     -webkit-border-radius: 5px;	
+     -webkit-border-radius: 5px;  
      padding: 2% 5%;
      margin-bottom: 4%;
    }
 
    .bottomcontent {
-     background-color: #FFF;	
+     background-color: #FFF;  
      border-radius: 5px;
      -moz-border-radius: 5px;
-     -webkit-border-radius: 5px;	
+     -webkit-border-radius: 5px;  
      padding: 2% 5%;
    }
 
@@ -556,8 +556,8 @@
      float: left;
      border-radius: 5px;
      -moz-border-radius: 5px;
-     -webkit-border-radius: 5px;	
-   }	
+     -webkit-border-radius: 5px;  
+   }  
 
    .contactForm {
     width: 100%;
@@ -576,12 +576,12 @@
    float: left;
    border-radius: 5px;
    -moz-border-radius: 5px;
-   -webkit-border-radius: 5px;	
-   background-color: #FFF;	
+   -webkit-border-radius: 5px;  
+   background-color: #FFF;  
    margin-top: 4%;
    margin-left: 0;
    padding: 0 7%;
-   margin-bottom: 0;		
+   margin-bottom: 0;    
  }
 
  .top-sidebar p {
@@ -597,8 +597,8 @@
    background-color: #494949;
    border-radius: 5px;
    -moz-border-radius: 5px;
-   -webkit-border-radius: 5px;	
-   color: #FFF;	
+   -webkit-border-radius: 5px;  
+   color: #FFF; 
  }
 
  .mainFooter p {
