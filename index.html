@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-	<title>Nathanial Hapeman - Online Computer Science Portfolio	</title>
+	<title>Nathanial Hapeman - Online Computer Science Portfolio</title>
 
 	<meta charset="utf-8" />
 	<link rel="shortcut icon" href="favicon.ico" >
@@ -11,15 +11,15 @@
 </head>
 
 <body class="body">
-
+	
 	<header class="mainHeader">
 
 		<img src="img/logo.png">
 		<nav><ul>
 			<div class="listFirst">
-				<li><a href="index.html">Home</a></li>
+				<li class="active"><a href="#">Home</a></li>
 				<li><a href="resume.pdf">Resume</a></li>
-				<li class="active"><a href="#">Projects</a></li>
+				<li><a href="projects.html">Projects</a></li>
 				<li><a href="interest.html">Interest</a></li>
 			</div>
 			<li>
@@ -39,182 +39,96 @@
 </header>
 
 <div class="mainContent">
-	<div class="projectContent">
+	<div class="content">	
 
-		<!--  ~~~~~~~~~~~~~~~~~~~~~   mario   ~~~~~~~~~~~~~~~~~~~~~~  -->
-
-		<article class="subProjectContent">	
-			<header  class = "projectHeader">
-				<h2 > <a name="mario"> Super Mario Bros: Reloaded  (c++) </a> </h2>
+		<article class="topcontent">	
+			<header>
+				<h2> Quick Intro</h2>
 			</header>
-			<br>
 
 
-			<div class="subLeft">
-				<div class="videowrapper">
-					<iframe src="http://www.youtube.com/embed/EMslyjWIPGo" frameborder="0" width="560" height="315"></iframe>
-				</div>
-			</div>
+
+			
+			<p>
+				Hello, I am Nathanial Hapeman and I develop software. <br> <br>
+				I have a broad range of interest in the programs I develop. 
+				For my 
+				<a href="projects.html#shooter">latest project </a>
+				I am developing a multi-directional shooter for iOS. Besides games, I have developed
+				programs like letter recognition software, N-Body simulations, a media player 
+				similar to iTunes, and many others you can check out
+				<a href="projects.html" rel="bookmark" title="Nate's Projects"> here</a>. 
+				I am most comfortable programming in
+				c/c++ but I am familiar with java, python, lua, bash scripting, html, css, and matlab.
+				Check out my 
+				<a href="resume.pdf" rel="bookmark" title="Nate's Resume"> resume </a>
+				for a quick summary of my background.
 
 
-			<div class="subRight">				
-				<p> 
-					This game was developed solely by me using c++/c and SDL as the API. I do not have any plans to publish the game and constructed it for the fun of programming and the awesome learning experience. Some things to note are its heavy use in Polymorphism, Containers, Memory Management, and Threading. The video covers most of the key concepts involved so check it out.
-
-				</p>
-			</div>	
-
-			<br>
+			</p>
+			
 
 		</article>
 
-
-		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~   myTunes   ~~~~~~~~~~~~~~~~~~~~  -->
-
-
-		<article class="subProjectContent">	
-			<header class = "projectHeader">
-				<h2 >  <a name="myTunes"> myTunes (java) </a></h2>
+		<article class="middlecontent">	
+			<header>
+				<h2>Education</h2>
 			</header>
-			<br>
 
+			<p> 
+				<h6>University of California, Riverside </h6> <br>
+				BS in Mechanical Engineering, minor in Computer Science - 3.14 <br>
+				Only considering Computer Science Minor          - 3.63
 
-			<div class="subLeft">
+			</p>
 
-				<div class="videowrapper">
-					<iframe src="http://www.youtube.com/embed/1c4erMvMnVQ" frameborder="0" width="560" height="315"></iframe>
-				</div>
-
-			</div>
-
-			<div class="subRight">		
-				<p> 
-					I created this media player for the soul purpose of having greater management over my music. The layout and functionality is similar to iTunes but it has some additional features like hotkeys for inserting songs into playlists or checkmarks to see which playlist a song is in. Speed was a big concern while implementing this media player. When a user adds music to the library, all the information for each song is calculated only once (not each time myTunes start) then stored in a hashmap that way I can access information in constant time. Also, I do not copy the songs to a folder, rather I copy the address then load it when the user wants to play. Lastly, when I save the information, I serialize it that way it loads fast. Two of the most difficult things to implement were the regex filter for the search bar and the multithreading for playing the sound.
-
-
-				</p>
-			</div>
-
-			<br>
 
 		</article>
 
-
-		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~   shooter   ~~~~~~~~~~~~~~~~~~~~  -->
-
-
-		<article class="subProjectContent">	
-			<header  class = "projectHeader" >
-
-				<h2 > <a name="shooter"> Multidirectional Shooter (lua with corona SDK)  </a></h2>
-
+		<article class="bottomcontent">	
+			<header>
+				<h2>Backstory</h2>
 			</header>
-			<br>
+
+			<p> 
+				Oddly enough, Computer Science was not my major in College; it was
+				Mechanical Engineering. See I grew up working on cars and dirt bikes 
+				so I thought Mechanical Engineering was the appropriate major for me. 
+				This all changed when I took a course on Matlab in my third year as a 
+				Mechanical Engineering student. The final project for this class was to 
+				create anything you want in Matlab just as long as it was challenging. 
+				I jumped on this opportunity and created a 3D simulation of a racecar 
+				driving around a track doing flips over obstacles, drifts around turns, 
+				and wheelies here and there.
+				This project actually got top in class and got me a bonus of 5% extra credit towards my total grade but I did not care about that. I created that program because it was fun! For my next big project, I decided to create a letter recognition software
+				program even though I had no clue what computer vision was. When I was finished I realized something.
+
+				<br><br>I was addicted to programming...<br><br>
+
+				And so I took an introductory course on c++ in what should have been my
+				final quarter at UCR. At that point, I had a choice between graduating
+				or pursuing a minor in Computer Science. Midway though the quarter it was obvious I had to get a minor. Following that quarter, I took nothing but Computer Science courses straight till I had a minor. Now I understand that most companies might be looking for someone with more expereince than a minor so in whatever free time I have, I develop. I have created some pretty awesome programs. Currently, I am developing a game for
+				iOS that is very similar to geometry wars. I plan on publishing it for free when I am done to get my name out there. Check out my <a href="projects.html" rel="bookmark" title="Permalink to this POST TITLE"> projects page </a> for more projects I have done.
 
 
-			<div class="subLeft">
 
-				<img src="img/multiShooter.png">
+			</p>
 
-			</div>
-
-			<div class="subRight">				
-				<p> 
-					This is my latest project I am working on. It is a multi-directional shooter developed for the iOS platform. The game is played with two joysticks, one for moving and the other for shooting. Enemies are generated at random until the space ship gets hit. The rate at which the enemies generates increases as time goes by. Lastly, if the player wants, he or she can unleash an atomic bomb to destroy all the enemies at once.
-
-				</p>
-			</div>	
-
-			<br>
 
 		</article>
 
-		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~  phong shader   ~~~~~~~~~~~~~~~~~~~~  -->
-
-
-
-		<article class="subProjectContent">	
-			<header  class = "projectHeader" >
-				<h2 >  Phong Shader  (c++ with openGL) </h2>
-			</header>
-			<br>
-
-
-			<div class="subLeft">
-
-				<img src="img/phongShading.png">
-			</div>
-
-			<div class="subRight">				
-				<p> 
-					This is the only project that I actually made for a school project but I did the extra credit so I wanted to share it. It was made using c++, glut and openGl and works by taking a triangular mesh and applying Phong smooth shading. Additionally it can rotate, translate and use level subdivision to transform the original mesh into a finer mesh. The extra credit was to apply smooth shading which was very difficult since all the normals for each point had to be linearly interpolated. I also wrote text to screen and applied optimizations like boundary boxes to make the program run faster. This was not required but I did so for the fun of it. 
-
-				</p>
-			</div>	
-
-			<br>
-
-		</article>
-
-
-		<!-- ~~~~~~~~~~~~~~~~~~   letter software   ~~~~~~~~~~~~~~~~~  -->
-
-		<article class="subProjectContent">	
-			<header  class = "projectHeader" >
-				<h2 >  Letter Recognition Software  (Matlab) </h2>
-			</header>
-			<br>
-
-
-			<div class="subLeft">
-				<img src="img/letterRecog.png">
-			</div>
-
-			<div class="subRight">				
-				<p> 
-					This algorithm could identify the letters written in a picture. It was actually one of the first programs I developed as a Mechanical engineering undergrad and purely for fun. Here is how I did it. It assumes only letters are written in a picture so right away I throw out two of the color matrices in the rgb matrix provided. Then I apply a filter to make the remaining elements in the matrix either 0 or 255. Then I go through each one of the rows in the matrix and find all the places were it changes from having values to no values. These changes mark a line with text from white space. what is store all the lines in a matrix and then go through each line to find the spaces between the letters and save all the letters to a matrix. Then I apply a normalizing scheme to make all the letters the same size. I do that step so my algorithm can analyze different fonts. Then I compare each letter to a template of the alphabet to find which letter it closely resembles. You can find it <a href="http://www.mathworks.com/matlabcentral/fileexchange/35975-picture-letter-recognition-software">here</a> on Matlab central as well as some of my first programs with Matlab.
-
-				</p>
-			</div>	
-
-			<br>
-
-		</article>
-
-
-		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~  producing   ~~~~~~~~~~~~~~~~~~~~  -->
-
-
-
-		<article class="subProjectContent">	
-			<header  class = "projectHeader" >
-				<h2 >  Producing </h2>
-			</header>
-			<br>
-
-
-			<div class="subLeft">
-
-				<img src="img/flStudio.png">
-			</div>
-
-			<div class="subRight">				
-				<p> 
-					A big passion of mine is music so much so that I think I am partially deaf from always blasting my stereo or headphones. I enjoy just about every single genre but listen to house the most since it takes elements from all genres and mashes them together. Anyways, I produce house and similar genres in my spare time. You can check out a few of my songs <a href="https://soundcloud.com/rezenn"> here</a>. This is main reason why I created <a href="#myTunes"> myTunes</a> and why my mario game has an awesome sound track and sound effects :)
-
-				</p>
-			</div>	
-
-			<br>
-
-		</article>
 	</div>
 </div>
 
-<!-- ~~~~~~~~~~~~~~~~~~~~~~~~   footer   ~~~~~~~~~~~~~~~~~~~~  -->
+
+
+
+
+
+
 
 <footer class="mainFooter">
-	<div id="bottom-text">
+	<div id="bottom-text"> 
 
 		<address> Contact
 			<a href="mailto:nhapeman@gmail.com">Me</a>
@@ -229,7 +143,12 @@
 	<a href="https://github.com" class="github" title="github link"></a>
 	<a href="https://soundcloud.com/rezenn" class="soundcloud" title="soundcloud link"></a>
 
+
+
+
 </footer>
+
+
 
 
 </body>
