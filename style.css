@@ -210,6 +210,11 @@
     margin-bottom: 3%;
   }
 
+  .subProjectContent h6{
+
+    float:left;
+  }
+
   .projectHeader{
     text-align: center;
   }
