@@ -130,6 +130,30 @@
 
 		</article>
 
+		<!-- ~~~~~~~~~~~~~~~~~~   letter software   ~~~~~~~~~~~~~~~~~  -->
+
+		<article class="subProjectContent">	
+			<header  class = "projectHeader" >
+				<h2 >  Letter Recognition Software  (Matlab) </h2>
+			</header>
+			<br>
+
+
+			<div class="subLeft">
+				<img src="img/letterRecog.png">
+			</div>
+
+			<div class="subRight">				
+				<p> 
+					This algorithm could identify the letters written in a picture. It was actually one of the first programs I developed as a Mechanical engineering undergrad and purely for fun. Here is how I did it. It assumes only letters are written in a picture so right away I throw out two of the color matrices in the rgb matrix provided. Then I apply a filter to make the remaining elements in the matrix either 0 or 255. Then I go through each one of the rows in the matrix and find all the places were it changes from having values to no values. These changes mark a line with text from white space. what is store all the lines in a matrix and then go through each line to find the spaces between the letters and save all the letters to a matrix. Then I apply a normalizing scheme to make all the letters the same size. I do that step so my algorithm can analyze different fonts. Then I compare each letter to a template of the alphabet to find which letter it closely resembles. You can find it <a href="http://www.mathworks.com/matlabcentral/fileexchange/35975-picture-letter-recognition-software">here</a> on Matlab central as well as some of my first programs with Matlab.
+
+				</p>
+			</div>	
+
+			<br>
+
+		</article>
+
 		<!-- ~~~~~~~~~~~~~~~~~~~~~   minesweeper   ~~~~~~~~~~~~~~~  -->
 		<article class="topcontent">
 
@@ -185,30 +209,6 @@
 
 		</article>
 
-
-		<!-- ~~~~~~~~~~~~~~~~~~   letter software   ~~~~~~~~~~~~~~~~~  -->
-
-		<article class="subProjectContent">	
-			<header  class = "projectHeader" >
-				<h2 >  Letter Recognition Software  (Matlab) </h2>
-			</header>
-			<br>
-
-
-			<div class="subLeft">
-				<img src="img/letterRecog.png">
-			</div>
-
-			<div class="subRight">				
-				<p> 
-					This algorithm could identify the letters written in a picture. It was actually one of the first programs I developed as a Mechanical engineering undergrad and purely for fun. Here is how I did it. It assumes only letters are written in a picture so right away I throw out two of the color matrices in the rgb matrix provided. Then I apply a filter to make the remaining elements in the matrix either 0 or 255. Then I go through each one of the rows in the matrix and find all the places were it changes from having values to no values. These changes mark a line with text from white space. what is store all the lines in a matrix and then go through each line to find the spaces between the letters and save all the letters to a matrix. Then I apply a normalizing scheme to make all the letters the same size. I do that step so my algorithm can analyze different fonts. Then I compare each letter to a template of the alphabet to find which letter it closely resembles. You can find it <a href="http://www.mathworks.com/matlabcentral/fileexchange/35975-picture-letter-recognition-software">here</a> on Matlab central as well as some of my first programs with Matlab.
-
-				</p>
-			</div>	
-
-			<br>
-
-		</article>
 
 
 		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~  producing   ~~~~~~~~~~~~~~~~~~~~  -->
