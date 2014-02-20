@@ -11,13 +11,13 @@
     margin: 0;
     padding: 0;
     text-align: left;
-   }
+  }
 
-   .body {
+  .body {
     clear: both; 
     margin: 0 auto; 
     width: 90%;
-   }
+  }
 
 /* ===========================
    ========= Headings ======== 
@@ -32,52 +32,52 @@
     font-weight: 400;
     line-height: 1.1;
     margin-bottom: .8em;
-   }
+  }
 
-   h2{
+  h2{
     font-weight:100;
     color: #CF5C3F;
     text-shadow: 1px 1px 1px gray;
     display: inline;
     text-decoration: none;
-   }
+  }
 
-   h6{
+  h6{
     font-weight:100;
     color: gray;
     font-style:italic;
     display: inline;
     text-decoration: none;
-   }
+  }
 
 /* ===========================
    ======= Anchor style ====== 
    =========================== */
    a {
     outline: 0;
-   }
+  }
 
 
 
 
 
-   .mainContent a:link, a:visited {
+  .mainContent a:link, a:visited {
     color: #CF5C3F;
     padding: 0 1px;
     text-decoration: none;
-   }
+  }
 
-   .mainContent a:hover, a:active {
+  .mainContent a:hover, a:active {
     background-color: #CF5C3F;
     color: #fff;
     text-decoration: none;
-   }
+  }
 
-   /* ---------------------------------------------------------- */
-   /* ---------------------   Main Header   -------------------- */
-   /* ---------------------------------------------------------- */
-   
-   .mainHeader nav {
+  /* ---------------------------------------------------------- */
+  /* ---------------------   Main Header   -------------------- */
+  /* ---------------------------------------------------------- */
+
+  .mainHeader nav {
 
     background: #494949;
     font-size: 1.143em;
@@ -89,186 +89,211 @@
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     text-shadow: 1px 1px 1px black;
-   }
+  }
 
-   .mainHeader nav ul {
+  .mainHeader nav ul {
     list-style: none; 
     margin: 0 auto;
-   }
+  }
 
-   .mainHeader nav ul .listFirst li{
+  .mainHeader nav ul .listFirst li{
     float: left; 
     display: inline; 
-   }
+  }
 
-   .mainHeader nav li .listTop a {
+  .mainHeader nav li .listTop a {
     float: right; 
     display: inline; 
-   }
+  }
 
-   .mainHeader nav .listFirst li a:link, .mainHeader nav .listFirst li a:visited {
+  .mainHeader nav .listFirst li a:link, .mainHeader nav .listFirst li a:visited {
     color: #fff;
     display: inline-block;
     height: 30px;
     padding: 5px 23px;
     text-decoration: none;
-   }
+  }
 
-   .mainHeader nav .listFirst  li a:hover, .mainHeader nav a:active,
-   .mainHeader nav .active a:link, .mainHeader nav .active a:visited {
-    
+  .mainHeader nav .listFirst  li a:hover, .mainHeader nav a:active,
+  .mainHeader nav .active a:link, .mainHeader nav .active a:visited {
+
     background: #CF0000;
     color: #fff;
     text-shadow: none !important;
-   }
+  }
 
-   .mainHeader nav li .listTop a:hover{
+  .mainHeader nav li .listTop a:hover{
     background-color: none;
     color: #fff;
     text-shadow: none !important;
-   }
+  }
 
-   .mainHeader nav li a {
+  .mainHeader nav li a {
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
-   }
+  }
 
-   .mainHeader img {
+  .mainHeader img {
     width: 104.5%;
     height: auto;
     margin: 2% -4.5%;
-   }
+  }
 
-   /* ------------------------------------------------------------ */
-   /* -------------------------   Conent   ----------------------- */
-   /* ------------------------------------------------------------ */
+  /* ------------------------------------------------------------ */
+  /* -------------------------   Conent   ----------------------- */
+  /* ------------------------------------------------------------ */
 
-   .mainContent {
+  .mainContent {
 
     overflow: hidden;
     line-height: 25px;
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
-   }
+  }
 
-   .topcontent {
+  .topcontent {
+    height: 600;
     background-color: #FFF;
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px; 
     padding: 3% 5%; 
     margin-bottom: 3%;
-   }
 
-   .middlecontent {
+  }
+
+  .middlecontent {
     background-color: #FFF;
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px; 
     padding: 3% 5%; 
     margin-bottom: 3%;
-   }
+  }
 
-   .content {
+  .content {
     width: 100%;
     float: left;
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px; 
-   }
-
-
-   .post-info {
-     font-style: italic;
-     color: #999;
-     font-size: 85%;
-   }
-
-   /* ------------------------------------------------------------ */
-   /* ------------------------   Projects   ---------------------- */
-   /* ------------------------------------------------------------ */
-
-   .projectContent {
-    width: 100%;
-    float: none;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px; 
-  }
-
-  .subProjectContent{
-
-    text-align: left;
-    display: inline-block; 
-    background-color: #FFF;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px; 
-    padding: 3% 5%; 
-    margin-bottom: 3%;
-  }
-  
-  .projectHeader{
-    text-align: center;
-  }
-
-  .subLeft{
-    float: left;
-    width: 60%;
-  }
-
-  .subLeft img {
-    width: 95%;
-    height: auto;
-    margin: 0% 0%;
-  }
-
-   .interestLeft{
-    float: left;
-    width: 50%;
-  }
-
-  .interestLeft img {
-    width: 95%;
-    height: auto;
-    margin: 0% 0%;
-  }
-
-  .interestRight{
-    float: right;
-    width: 50%;
-  }
-
-  .interestRight img {
-    width: 95%;
-    height: auto;
-    margin: 0% 0%;
   }
 
 
-  .subRight{
-    margin-top: -2.5%;
-    margin-bottom: -6%;
+  .post-info {
+   font-style: italic;
+   color: #999;
+   font-size: 85%;
+ }
 
-  }
+ /* ------------------------------------------------------------ */
+ /* ------------------------   Projects   ---------------------- */
+ /* ------------------------------------------------------------ */
 
-  .videowrapper {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 30px; height: 0; overflow: hidden;
-  }
+ .projectContent {
+  width: 100%;
+  float: none;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px; 
+}
 
-  .videowrapper iframe,
-  .videowrapper object,
-  .videowrapper embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 95%;
-    height: 97%;
-  }
+.subProjectContent{
+
+  text-align: left;
+  display: inline-block; 
+  background-color: #FFF;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px; 
+  padding: 3% 5%; 
+  margin-bottom: 3%;
+}
+
+.projectHeader{
+  text-align: center;
+}
+
+.subLeft{
+
+  float: left;
+  width: 60%;
+}
+
+.subLeft img {
+  width: 95%;
+  height: auto;
+  margin: 0% 0%;
+}
+
+.subRight{
+  margin-top: -2.5%;
+  margin-bottom: -6%;
+
+}
+
+.interestLeft{
+  float: left;
+  width: 50%;
+}
+
+.interestLeft img {
+  width: 95%;
+  height: auto;
+  margin: 0% 0%;
+}
+
+.interestRight{
+  float: right;
+  width: 50%;
+}
+
+.interestRight img {
+  width: 95%;
+  height: auto;
+  margin: 0% 0%;
+}
+
+.videowrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.videowrapper iframe,
+.videowrapper object,
+.videowrapper embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 95%;
+  height: 97%;
+}
+
+/* ==============================================================
+   ======================   Game Canvas   =======================
+   ============================================================== */
+.gameCanvas{
+  float: left;
+   margin-right: 3%; 
+}
+
+.gameCanvas canvas {
+  margin: 0% 0%;
+}
+
+.gameCanvasRight{
+  margin-top: -2.5%;
+  margin-bottom: -6%;
+ 
+}
+
+.clear
+{
+  clear: both;
+}
 
 
 
@@ -294,90 +319,90 @@
 
 
 
-     box-shadow: inset 0 1px rgba(255, 255 ,255,  0.3 );
-     position: relative;
+    box-shadow: inset 0 1px rgba(255, 255 ,255,  0.3 );
+    position: relative;
 
-   }
-
-
-
-   /*-------------------------   center image  -------------- */
+  }
 
 
-   div.nh{
-     position:absolute;
-     left:50%;
-     top: -6px;
-   }
+
+  /*-------------------------   center image  -------------- */
 
 
-   .mainFooter #bottom-text {
-     float :left;
-     display: table-cell;
-     vertical-align: middle;
-     position:relative;
-     top: 8px;
-     left: 8px;
-     
-   }
+  div.nh{
+   position:absolute;
+   left:50%;
+   top: -6px;
+ }
 
-   .mainFooter #bottom-text a:link, a:visited {
-     color: #CF5C3F;
-     padding: 0 1px;
-     text-decoration: none;
-     
-   }
 
-   .mainFooter #bottom-text a:hover, a:active {
-     background-color: #CF5C3F;
-     color: #fff;
-     text-decoration: none;
-   }
+ .mainFooter #bottom-text {
+   float :left;
+   display: table-cell;
+   vertical-align: middle;
+   position:relative;
+   top: 8px;
+   left: 8px;
 
-   .linkedin {
+ }
 
-     width: 32px;
-     height:32px;
-     display:inline;
-     vertical-align: middle;
-     background:transparent url('img/linkedin.png') center top no-repeat;
-     float: right;
-     position:relative;
-     top: 4px;
-     right: 8px;
+ .mainFooter #bottom-text a:link, a:visited {
+   color: #CF5C3F;
+   padding: 0 1px;
+   text-decoration: none;
 
-   }
-   .github {
-     width: 32px;
-     height:32px;
-     display:inline;
-     background:transparent url('img/github.png') center top no-repeat;
-     float: right;
-     position:relative;
-     top: 4px;
-     right: 16px;
-   }
-   .soundcloud {
-     width: 32px;
-     height:32px;
-     display:inline;
-     background:transparent url('img/soundcloud.png') center top no-repeat;
-     float: right;
-     position:relative;
-     top: 4px;
-     right: 24px;
-   }
+ }
 
-   .linkedin:hover {
-     background-position: 0 -32px;
+ .mainFooter #bottom-text a:hover, a:active {
+   background-color: #CF5C3F;
+   color: #fff;
+   text-decoration: none;
+ }
 
-   }
-   .github:hover {
-     background-position: 0 -32px;
-   }
-   .soundcloud:hover {
-     background-position: 0 -32px;
-   }
+ .linkedin {
+
+   width: 32px;
+   height:32px;
+   display:inline;
+   vertical-align: middle;
+   background:transparent url('img/linkedin.png') center top no-repeat;
+   float: right;
+   position:relative;
+   top: 4px;
+   right: 8px;
+
+ }
+ .github {
+   width: 32px;
+   height:32px;
+   display:inline;
+   background:transparent url('img/github.png') center top no-repeat;
+   float: right;
+   position:relative;
+   top: 4px;
+   right: 16px;
+ }
+ .soundcloud {
+   width: 32px;
+   height:32px;
+   display:inline;
+   background:transparent url('img/soundcloud.png') center top no-repeat;
+   float: right;
+   position:relative;
+   top: 4px;
+   right: 24px;
+ }
+
+ .linkedin:hover {
+   background-position: 0 -32px;
+
+ }
+ .github:hover {
+   background-position: 0 -32px;
+ }
+ .soundcloud:hover {
+   background-position: 0 -32px;
+ }
 
 
 
@@ -463,7 +488,7 @@
 
      background: #494949;
      font-size: 1.143em;
-     height: 200px;
+     height: 240px;
      line-height: 30px;
      margin-bottom: 0;
      border-radius: 5px;
@@ -623,6 +648,13 @@
   float: left;
   width: 100%;
 }
+
+/*
+ .gameCanvas{
+  float: left;
+  width: 100%;
+}
+*/
 
 .interestLeft{
   float: left;
