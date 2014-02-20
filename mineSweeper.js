@@ -102,7 +102,7 @@ radialS.src = "img/radialS.png";
 var radialNS = new Image();
 radialNS.src = "img/radialNS.png";
 var bg = new Image();
-bg.src = "img/minesweeper.png";
+bg.src = "img/mineSweeper.png";
 
 
 // sound effects
@@ -146,7 +146,6 @@ window.onload = function(){
 	c = canvas.getContext("2d");
 
 	//gameCanvas = document.getElementById("gameCanvas");
-	console.log("Here is width: " , canvas.width);
 	c.font=  "bold 18px verdana, sans-serif ";
 	c.fillStyle = "#ffffff"; 
 
