@@ -214,7 +214,13 @@
 
 .projectHeader{
   text-align: center;
+
 }
+.projectHeader a:hover, a:active {
+    background-color: #ffffff;
+    color: #CF5C3F;
+    text-decoration: none;
+  }
 
 .subLeft{
 
