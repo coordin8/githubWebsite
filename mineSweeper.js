@@ -1,7 +1,8 @@
 /////////////////// initial variable declarations
 
+
 // object literals
-var s = {
+var stats = {
 	rows: 9,
 	cols: 13,
 	width: 30,
@@ -20,7 +21,7 @@ var resetButton = {
 	y: 15,
 };
 
-var clock = {
+var gameClock = {
 	time: 0,
 	x: 25,
 	y: 15,
@@ -52,7 +53,6 @@ var b3 = {
 };
 
 
-
 // setting up arrays
 var bombs = [];
 var clickedBoxes = [];
@@ -68,12 +68,12 @@ var boxesToCheck = [
 [-1, 0 ]
 ];
 
-for (var i = 0; i < s.cols; i++) {
-	bombsFound[i] = new Array(s.rows);
+for (var i = 0; i < stats.cols; i++) {
+	bombsFound[i] = new Array(stats.rows);
 }
 
-for( var i =0; i < s.cols; i++ ){
-	for( var j =0; j < s.rows; j++ ){
+for( var i =0; i < stats.cols; i++ ){
+	for( var j =0; j < stats.rows; j++ ){
 		bombsFound[i][j] = -1;
 	}
 }
@@ -95,64 +95,65 @@ var flag = new Image();
 flag.src = "img/flag.png";
 var resetPic = new Image();
 resetPic.src = "img/reset.png";
-var clockPic = new Image();
-clockPic.src = "img/clock.png";
+var clockPicM = new Image();
+clockPicM.src = "img/clock.png";
 var radialS = new Image();
 radialS.src = "img/radialS.png";
 var radialNS = new Image();
 radialNS.src = "img/radialNS.png";
-var bg = new Image();
-bg.src = "img/mineSweeper.png";
+var msBG = new Image();
+msBG.src = "img/mineSweeper.png";
 
 
 // sound effects
-var boomSound = new Audio("boomSound.wav"); 
-var pressB = new Audio("pressB.wav");
-var tada = new Audio("tada.wav");
-var consuela = new Audio("consuela.wav"); 
+var boomSound = new Audio("sound/boomSound.wav"); 
+var pressB = new Audio("sound/pressB.wav");
+var tada = new Audio("sound/tada.wav");
+var consuela = new Audio("sound/consuela.wav"); 
 
 
 // vars
-var c;
+var cc;
 var mX;
 var mY;
 var clickedX;
 var clickedY;
-var canvas;
-var canvasH;
-var canvasW;
+var msCanvas;
+var cH;
+var cW;
 var gameOver = false;
 var right = 2;
-var boxesLeft = s.rows* s.cols - s.numberBombs;
-var mapW= s.cols  *  s.width;
-var mapH= s.rows* s.height;
+var boxesLeft = stats.rows* stats.cols - stats.numberBombs;
+var msWidth = stats.cols  *  stats.width;
+var msHeight = stats.rows* stats.height;
 var rState = 1;
 
 
-
 /////////////////////////////////// onload
-window.onload = function(){
+window.addEventListener("load", loadM);
+function loadM(){
 
-	//declaring canvas
-	canvas = document.getElementById("gCanvas");
-	canvas.addEventListener('mouseup', clickedCanvas, false );
-	canvasH = canvas.height;
-	canvasW = canvas.width;
-	canvas.oncontextmenu = function() {
+
+	//declaring msCanvas
+	msCanvas = document.getElementById("mCanvas");
+	msCanvas.addEventListener('mouseup', clickedCanvas, false );
+	cH = msCanvas.height;
+	cW = msCanvas.width;
+	msCanvas.oncontextmenu = function() {
 		return false; 
 	}
 
 	//giving it style
-	c = canvas.getContext("2d");
+	cc = msCanvas.getContext("2d");
 
 	//gameCanvas = document.getElementById("gameCanvas");
-	c.font=  "bold 18px verdana, sans-serif ";
-	c.fillStyle = "#ffffff"; 
+	cc.font=  "bold 18px verdana, sans-serif ";
+	cc.fillStyle = "#ffffff"; 
 
 	// pushing map
-	s.shiftX = (canvasW - mapW)/2;
-	s.shiftY = (canvasH - mapH)-40;
-	clock.x = s.shiftX+5; 
+	stats.shiftX = (cW - msWidth)/2;
+	stats.shiftY = (cH - msHeight)-40;
+	gameClock.x = stats.shiftX+5; 
 	
 
 	// initializing other things
@@ -165,22 +166,21 @@ function init(){
 	var x;
 	var y;
 
-	for(var i = 0 ; i< s.numberBombs ; i++){
+	for(var i = 0 ; i< stats.numberBombs ; i++){
 
 		// not adding duplicate bombs
 		while(true){
-			x = Math.floor ( Math.random()*s.cols);
-			y = Math.floor ( Math.random()*s.rows);
+			x = Math.floor ( Math.random()*stats.cols);
+			y = Math.floor ( Math.random()*stats.rows);
 
 			if( bombsFound[x][y] != -2){
 				bombsFound[x][y] = -2;
 				bombs[i] = [x , y];
 				break;
 			}
-			console.log("Almost added a duplicate!");
 		}	
 	}
-	drawCanvas();
+	drawGrid();
 }
 
 
@@ -189,18 +189,18 @@ function clickedCanvas(e){
 
 
 
-	var pos = getMousePos(canvas, e);
-	mX = pos.x - s.shiftX;
-	mY = pos.y - s.shiftY;
+	var pos = getMousePos(msCanvas, e);
+	mX = pos.x - stats.shiftX;
+	mY = pos.y - stats.shiftY;
 
 	if( collision(  resetButton,  pos.x, pos.y)  == true )
 	{
 		console.log("Reset Game");
-		resetGame();
+		resetMineSweeper();
 		pressB.play();
 		return;
 	}
-	else if( collision(  clock,  pos.x, pos.y)  == true )
+	else if( collision(  gameClock,  pos.x, pos.y)  == true )
 	{
 		consuela.play();
 		return;
@@ -210,24 +210,24 @@ function clickedCanvas(e){
 	{
 		rState = 1;
 		pressB.play();
-		s.numberBombsNext = 10;
-		drawBottom();
+		stats.numberBombsNext = 10;
+		drawMSBottom();
 		return;
 	}
 	else if( collision(  b2,  pos.x, pos.y)  == true )
 	{
 		rState = 2;
 		pressB.play();
-		s.numberBombsNext = 15;
-		drawBottom();
+		stats.numberBombsNext = 15;
+		drawMSBottom();
 		return;
 	}
 	else if( collision(  b3,  pos.x, pos.y)  == true )
 	{
 		rState = 3;
 		pressB.play();
-		s.numberBombsNext = 20;
-		drawBottom();
+		stats.numberBombsNext = 20;
+		drawMSBottom();
 		return;
 	}
 
@@ -237,11 +237,11 @@ function clickedCanvas(e){
 	}
 
 	
-	if(   Math.floor(mX/ s.width) < s.cols && Math.floor(mY/ s.height)  < s.rows ){
+	if(   Math.floor(mX/ stats.width) < stats.cols && Math.floor(mY/ stats.height)  < stats.rows ){
 
 		
-		clickedX = Math.floor(mX/ s.width);
-		clickedY = Math.floor(mY/ s.height);
+		clickedX = Math.floor(mX/ stats.width);
+		clickedY = Math.floor(mY/ stats.height);
 
 
 		// adding/ removing flag
@@ -251,26 +251,26 @@ function clickedCanvas(e){
 			if(bombsFound[clickedX][clickedY] == -1 ){
 				bombsFound[clickedX][clickedY] = -3;
 				pressB.play();
-				drawCanvas();
+				drawGrid();
 
 			}
 			else if (bombsFound[clickedX][clickedY] == -3) {
 				bombsFound[clickedX][clickedY] = -1;
 				pressB.play();
-				drawCanvas();
+				drawGrid();
 			};
 
 			//flag bomb
 			if(bombsFound[clickedX][clickedY] == -2 ){
 				bombsFound[clickedX][clickedY] = -4;
 				pressB.play();
-				drawCanvas();
+				drawGrid();
 
 			}
 			else if (bombsFound[clickedX][clickedY] == -4) {
 				bombsFound[clickedX][clickedY] = -2;
 				pressB.play();
-				drawCanvas();
+				drawGrid();
 			};
 			return;
 		}
@@ -283,9 +283,9 @@ function clickedCanvas(e){
 
 
 		//check if clicked bomb
-		for(var i =0; i< s.numberBombs ; i++){
+		for(var i =0; i< stats.numberBombs ; i++){
 			if(clickedX == bombs[i][0] && clickedY == bombs[i][1]){
-				lose();
+				loseMS();
 				gameOver = true;
 				return;
 			}
@@ -297,11 +297,11 @@ function clickedCanvas(e){
 			clickPass(clickedX, clickedY);
 
 			if(boxesLeft == 0){
-				winning();
+				winningMS();
 				gameOver = true;
 			}
 			else {
-				drawCanvas();
+				drawGrid();
 			}
 		}
 		
@@ -311,19 +311,19 @@ function clickedCanvas(e){
 	}
 }
 
-//////////////////////////////////////  timer
+//////////////////////////////////////  mineSweeperTimer
 
-function timer(){
+function mineSweeperTimer(){
 
 
-	c.clearRect(clock.x, clock.y, clock.w, clock.h);
-	c.drawImage( resetPic , resetButton.x , resetButton.y);
-	c.drawImage( clockPic , clock.x , clock.y);
-	c.fillStyle = "#000000";
-	c.fillText(clock.time, 43 , 37);
-	clock.time++;
-	if(clock.time == 999){
-		clock.time = 989;
+	cc.clearRect(gameClock.x, gameClock.y, gameClock.w, gameClock.h);
+	cc.drawImage( resetPic , resetButton.x , resetButton.y);
+	cc.drawImage( clockPicM , gameClock.x , gameClock.y);
+	cc.fillStyle = "#000000";
+	cc.fillText(gameClock.time, 43 , 37);
+	gameClock.time++;
+	if(gameClock.time == 999){
+		gameClock.time = 989;
 	}
 
 
@@ -331,15 +331,15 @@ function timer(){
 
 ////////////////////////////////////// reset
 
-function resetGame(){
+function resetMineSweeper(){
 
 
-	clearInterval(clock.id);
+	clearInterval(gameClock.id);
 
-	clock.time = 0;
-	boxesLeft = s.rows* s.cols - s.numberBombs;
-	for( var i =0; i < s.cols; i++ ){
-		for( var j =0; j < s.rows; j++ ){
+	gameClock.time = 0;
+	boxesLeft = stats.rows* stats.cols - stats.numberBombs;
+	for( var i =0; i < stats.cols; i++ ){
+		for( var j =0; j < stats.rows; j++ ){
 			bombsFound[i][j] = -1;
 		}
 	}
@@ -348,13 +348,13 @@ function resetGame(){
 	var y;
 
 
-	s.numberBombs = s.numberBombsNext;
-	for(var i = 0 ; i< s.numberBombs ; i++){
+	stats.numberBombs = stats.numberBombsNext;
+	for(var i = 0 ; i< stats.numberBombs ; i++){
 
 		// not adding duplicate bombs
 		while(true){
-			x = Math.floor ( Math.random()*s.cols);
-			y = Math.floor ( Math.random()*s.rows);
+			x = Math.floor ( Math.random()*stats.cols);
+			y = Math.floor ( Math.random()*stats.rows);
 
 			if( bombsFound[x][y] != -2){
 				bombsFound[x][y] = -2;
@@ -368,154 +368,154 @@ function resetGame(){
 	gameOver = false;
 	
 
-	drawCanvas();
+	drawGrid();
 }
 
 //////////////////////////////////////////////////////////////////
 ///////////////////////   rendering   ////////////////////////////
 //////////////////////////////////////////////////////////////////
 
-//////////////////////////////////// draw canvas
-function drawCanvas(){
+//////////////////////////////////// draw msCanvas
+function drawGrid(){
 
-	c.clearRect(0,0, 400, 400);
-	c.fillStyle = "rgba(200,200,200,1)";
-	c.fillRect(0,0, 400, 400);
-	c.fillStyle = "rgba(255,255, 255,1)";
-	c.drawImage( bg , 5 , 5);
+	cc.clearRect(0,0, 400, 400);
+	cc.fillStyle = "rgba(200,200,200,1)";
+	cc.fillRect(0,0, 400, 400);
+	cc.fillStyle = "rgba(255,255, 255,1)";
+	cc.drawImage( msBG , 5 , 5);
 
-	for( i = 0 ; i < s.cols ; i++){
-		for( j =0; j < s.rows ; j++){
-			var x = i*s.width + s.shiftX;
-			var y = j*s.height + s.shiftY;
+	for( i = 0 ; i < stats.cols ; i++){
+		for( j =0; j < stats.rows ; j++){
+			var x = i*stats.width + stats.shiftX;
+			var y = j*stats.height + stats.shiftY;
 
 
 			if( bombsFound[i][j] > -1 ){
 				if ( bombsFound[i][j]  > 0 ){
-					c.drawImage(numPic, x, y);
-					c.fillText(bombsFound[i][j], x +9 , y + 21);
+					cc.drawImage(numPic, x, y);
+					cc.fillText(bombsFound[i][j], x +9 , y + 21);
 				}
 				else
-					c.drawImage( zeroPic, x, y);
+					cc.drawImage( zeroPic, x, y);
 
 			}
 			else if( bombsFound[i][j] == -3 ||  bombsFound[i][j] == -4 ){
-				c.drawImage(flag, x, y); 	
+				cc.drawImage(flag, x, y); 	
 			}
-			else {c.drawImage(boxPic, x, y); }
+			else {cc.drawImage(boxPic, x, y); }
 
 		}
 
 	}
-	c.drawImage( resetPic , resetButton.x , resetButton.y);
-	c.drawImage( clockPic , clock.x , clock.y);
+	cc.drawImage( resetPic , resetButton.x , resetButton.y);
+	cc.drawImage( clockPicM , gameClock.x , gameClock.y);
 
-	c.fillText("E", 10 , 355 );
-	c.drawImage( radialNS , 30 , 335 );
-	c.fillText("M", 70 , 355 );
-	c.drawImage( radialNS , 90 , 335 );
-	c.fillText( "H" , 130 , 355 );
-	c.drawImage( radialNS , 150 , 335 );
+	cc.fillText("E", 10 , 355 );
+	cc.drawImage( radialNS , 30 , 335 );
+	cc.fillText("M", 70 , 355 );
+	cc.drawImage( radialNS , 90 , 335 );
+	cc.fillText( "H" , 130 , 355 );
+	cc.drawImage( radialNS , 150 , 335 );
 
 	switch(rState)
 	{
 	case 1:
-	  c.drawImage( radialS , 30 , 335 );
+	  cc.drawImage( radialS , 30 , 335 );
 	  break;
 	case 2:
-	  c.drawImage( radialS , 90 , 335 );
+	  cc.drawImage( radialS , 90 , 335 );
 	  break;
 	case 3:
-	  c.drawImage( radialS , 150 , 335 );
+	  cc.drawImage( radialS , 150 , 335 );
 	  break;
 	default:
 	  console.log("This shouldn't display!");
 	}
-	c.fillText( s.numberBombsNext, 330 , 357);
-	c.drawImage( bombPic , 360 , 335 );
+	cc.fillText( stats.numberBombsNext, 330 , 357);
+	cc.drawImage( bombPic , 360 , 335 );
 
-	c.fillStyle = "#000000";
-	c.fillText(clock.time, 43 , 37);
+	cc.fillStyle = "#000000";
+	cc.fillText(gameClock.time, 43 , 37);
 }
 
 
-//////////////////////////////////// lose
-function lose(){
+//////////////////////////////////// loseMS
+function loseMS(){
 
-	drawCanvas();
+	drawGrid();
 
 
 	//Rendering Bombs
-	for(var i =0; i< s.numberBombs; i++){
-		var x = bombs[i][0]*s.width + s.shiftX;
-		var y = bombs[i][1]*s.height + s.shiftY;
-		c.drawImage( bombBGPic, x, y );
+	for(var i =0; i< stats.numberBombs; i++){
+		var x = bombs[i][0]*stats.width + stats.shiftX;
+		var y = bombs[i][1]*stats.height + stats.shiftY;
+		cc.drawImage( bombBGPic, x, y );
 	}
 
 	boomSound.play();
 	console.log("Boom! You lost    :<(   ");
-	clearInterval(clock.id);
+	clearInterval(gameClock.id);
 }
 
-function drawBottom(){
+function drawMSBottom(){
 
-	c.clearRect(0,330, 400, 40);
-	c.fillStyle = "rgba(200,200,200,1)";
-	c.fillRect(0,330, 400, 40);
-	c.fillStyle = "rgba(255,255, 255,1)";
+	cc.clearRect(0,330, 400, 40);
+	cc.fillStyle = "rgba(200,200,200,1)";
+	cc.fillRect(0,330, 400, 40);
+	cc.fillStyle = "rgba(255,255, 255,1)";
 
-	c.fillText("E", 10 , 355 );
-	c.drawImage( radialNS , 30 , 335 );
-	c.fillText("M", 70 , 355 );
-	c.drawImage( radialNS , 90 , 335 );
-	c.fillText( "H" , 130 , 355 );
-	c.drawImage( radialNS , 150 , 335 );
+	cc.fillText("E", 10 , 355 );
+	cc.drawImage( radialNS , 30 , 335 );
+	cc.fillText("M", 70 , 355 );
+	cc.drawImage( radialNS , 90 , 335 );
+	cc.fillText( "H" , 130 , 355 );
+	cc.drawImage( radialNS , 150 , 335 );
 
 	switch(rState)
 	{
 	case 1:
-	  c.drawImage( radialS , 30 , 335 );
+	  cc.drawImage( radialS , 30 , 335 );
 	  break;
 	case 2:
-	  c.drawImage( radialS , 90 , 335 );
+	  cc.drawImage( radialS , 90 , 335 );
 	  break;
 	case 3:
-	  c.drawImage( radialS , 150 , 335 );
+	  cc.drawImage( radialS , 150 , 335 );
 	  break;
 	default:
 	  console.log("This shouldn't display!");
 	}
-	c.fillText( s.numberBombsNext, 330 , 357);
-	c.drawImage( bombPic , 360 , 335 );
+	cc.fillText( stats.numberBombsNext, 330 , 357);
+	cc.drawImage( bombPic , 360 , 335 );
 	
 }
 
-function winning(){
+function winningMS(){
 	
-	drawCanvas();
+	drawGrid();
 
 
 	// showing bombs
-	for(var i =0; i< s.numberBombs; i++){
-		var x = bombs[i][0]*s.width + s.shiftX;
-		var y = bombs[i][1]*s.height + s.shiftY;
-		c.drawImage( flag, x, y );
+	for(var i =0; i< stats.numberBombs; i++){
+		var x = bombs[i][0]*stats.width + stats.shiftX;
+		var y = bombs[i][1]*stats.height + stats.shiftY;
+		cc.drawImage( flag, x, y );
 	}
 
 
 	tada.play();
 
 	console.log("You Won!   :<) ");
-	clearInterval(clock.id);
+	clearInterval(gameClock.id);
 }
 
 
 //////////////////////////////////// click pass
 function clickPass( x , y ){
 
-	if(boxesLeft == s.rows* s.cols - s.numberBombs){
-		clock.id = setInterval ( timer, 1000 );
-		clock.time++;
+	if(boxesLeft == stats.rows* stats.cols - stats.numberBombs){
+		gameClock.id = setInterval ( mineSweeperTimer, 1000 );
+		gameClock.time++;
 	}
 
 	boxesLeft--;
@@ -528,7 +528,7 @@ function clickPass( x , y ){
 		var newX = x + boxesToCheck[i][0];
 		var newY = y + boxesToCheck[i][1];
 
-		if( newX >= 0 && newY >= 0 && newY < s.rows && newX < s.cols){
+		if( newX >= 0 && newY >= 0 && newY < stats.rows && newX < stats.cols){
 
 			//check if bomb
 			if( bombsFound[newX][newY] == -2 || bombsFound[newX][newY] == -4){
@@ -546,7 +546,7 @@ function clickPass( x , y ){
 		for( i in boxesToCheck ){
 			var newX = x + boxesToCheck[i][0];
 			var newY = y + boxesToCheck[i][1];
-			if( newX >= 0 && newY >= 0 && newY < s.rows && newX < s.cols ){
+			if( newX >= 0 && newY >= 0 && newY < stats.rows && newX < stats.cols ){
 				if(bombsFound[newX][newY] == -1){
 					clickPass( newX,  newY );
 				}
@@ -559,8 +559,8 @@ function clickPass( x , y ){
 
 ////////////////////////////////////  get actual position
 
-function getMousePos(canvas, evt) {
-	var rect = canvas.getBoundingClientRect();
+function getMousePos(msCanvas, evt) {
+	var rect = msCanvas.getBoundingClientRect();
 	return {
 		x: evt.clientX - rect.left,
 		y: evt.clientY - rect.top

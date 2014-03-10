@@ -282,19 +282,49 @@
    ======================   Game Canvas   =======================
    ============================================================== */
 .gameCanvas{
+   display: table;   
+   margin: 0 auto;
+   width: 100%;
+}
+
+.gameCanvas canvas {
+  display: table;   
+   margin: 0 auto;
+   margin-bottom: 2%;
+   margin-top: 2%;
+   
+  
+}
+
+.gameCanvasRight{
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  display: table;   
+   margin: 0 auto;
+  margin-top: 2%;
+  margin-bottom: -2%;
+  width: 600px;
+ 
+}
+
+
+.mineSweeper{
   float: left;
    margin-right: 3%; 
 }
 
-.gameCanvas canvas {
+.mineSweeper canvas {
   margin: 0% 0%;
 }
 
-.gameCanvasRight{
+.mineSweeperRight{
   margin-top: -2.5%;
   margin-bottom: -6%;
  
 }
+
+
 
 .clear
 {

@@ -5,7 +5,6 @@
 
 	<meta charset="utf-8" />
 	<link rel="shortcut icon" href="favicon.ico" >
-	<script type="text/javascript" src="mineSweeper.js"></script>
 	<link rel="stylesheet" href="style.css" type="text/css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -22,6 +21,7 @@
 				<li><a href="resume.pdf">Resume</a></li>
 				<li class="active"><a href="#">Projects</a></li>
 				<li><a href="interest.html">Interest</a></li>
+				<li><a href="games.html">You game?</a></li>
 			</div>
 			<li>
 				<div class="listTop">
@@ -154,33 +154,45 @@
 
 		</article>
 
-		<!-- ~~~~~~~~~~~~~~~~~~~~~   minesweeper   ~~~~~~~~~~~~~~~  -->
-		<article class="topcontent">
 
-			<header  class = "projectHeader">
-				<h2 > Minesweeper (Javascript) </h2>
+		<!-- ~~~~~~~~~~~~~~~~~~   Mine/ Pacman   ~~~~~~~~~~~~~~~~~  -->
+
+
+		<article class="subProjectContent">	
+			<header  class = "projectHeader" >
+				<h2 >  Pacman and Minesweeper  (JavaScript) </h2>
 			</header>
-			<br>	
-			
-			<div class ="gameCanvas">
-				<canvas id = "gCanvas"   width = "400" height = "370" style="border:1px solid #000000;">
+			<br>
 
-				</canvas>
+
+			<div class="interestLeft" style = "width: 56.5%">
+			<a href="games.html#pacLink">
+				<img src="img/pacPic.png">
+				</a>
 			</div>
 
+			<div class="interestRight" style = "width: 43.5%">
+				<a href="games.html#mineLink">
+					<img src="img/MSPic.png">
+					</a>
+			</div>
+			
 
-			<div class="gameCanvasRight">		
+			<div class="subLeft" style = "width: 100%">	
 
+						
 				<p> 
-					This is a project I recently built to help learn javascript. It started off as an online tutorial but I went my seperate way when I realized the tutorial started to implement one of the functions with O(m*n) time with m and n being the size of the board. I realized a way to reduce it to constant time and went my seperate way after that. Test it out but watch out for some of the sound effects! I designed it to give you a shock when you hit a bomb.
+					Click on each picture to begin playing the game on another
+					page. The description for each game is also posted there.
 
 				</p>
-			</div>
-			<br>
-			<div class="clear"></div>	
+			</div>	
 
+			<br>
 
 		</article>
+
+
 
 		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~  phong shader   ~~~~~~~~~~~~~~~~~~~~  -->
 
