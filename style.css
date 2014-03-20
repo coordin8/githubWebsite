@@ -3,7 +3,7 @@
    =========================== */
    
    body {
-    background-image: url('img/newBG.jpg');
+    background-image: url('img/mainBG.png');
     color: #000305;
     font-size: 87.5%; /* Base font size: 14px */
     font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -16,19 +16,19 @@
   .body {
     clear: both; 
     margin: 0 auto; 
-    width: 90%;
   }
 
-/* ===========================
-   ========= Headings ======== 
-   =========================== */
-   h2 {font-size: 1.571em}  /* 22px */
-   h3 {font-size: 1.429em}  /* 20px */
-   h4 {font-size: 1.286em}  /* 18px */
-   h5 {font-size: 1.143em}  /* 16px */
-   h6 {font-size: 1em}    /* 14px */
+  /* ---------------------------------------------------------- */
+  /* --------------------  Header Styles   ------------------- */
+  /* --------------------------------------------------------- */
 
-   h2, h3, h4, h5, h6 {
+  h2 {font-size: 1.571em}  /* 22px */
+  h3 {font-size: 1.429em}  /* 20px */
+  h4 {font-size: 1.286em}  /* 18px */
+  h5 {font-size: 1.143em}  /* 16px */
+  h6 {font-size: 1em}    /* 14px */
+
+  h2, h3, h4, h5, h6 {
     font-weight: 400;
     line-height: 1.1;
     margin-bottom: .8em;
@@ -36,8 +36,8 @@
 
   h2{
     font-weight:100;
-    color: #CF5C3F;
-    text-shadow: 1px 1px 1px gray;
+    color: #000;
+    /*text-shadow: 1px 1px 1px gray;*/
     display: inline;
     text-decoration: none;
   }
@@ -50,16 +50,13 @@
     text-decoration: none;
   }
 
-/* ===========================
-   ======= Anchor style ====== 
-   =========================== */
-   a {
+  /* ---------------------------------------------------------- */
+  /* ---------------------  Random Styles   ------------------- */
+  /* ---------------------------------------------------------- */
+
+  a {
     outline: 0;
   }
-
-
-
-
 
   .mainContent a:link, a:visited {
     color: #CF5C3F;
@@ -73,131 +70,147 @@
     text-decoration: none;
   }
 
+  ul, li, nav, p {
+
+    margin:0;
+    padding:0;
+    border:0;
+    outline: none;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+  }
+
+
+  nav ul,ul,ol {
+    list-style:none;
+  }
+  
+
   /* ---------------------------------------------------------- */
-  /* ---------------------   Main Header   -------------------- */
+  /* ------------------------  Header   ----------------------- */
   /* ---------------------------------------------------------- */
 
-  .mainHeader nav {
+  .mainMenu {
 
-    background: #494949;
-    font-size: 1.143em;
-    height: 40px;
-    line-height: 30px;
-    margin: 0 auto 30px auto;
-    text-align: center;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    text-shadow: 1px 1px 1px black;
-  }
-
-  .mainHeader nav ul {
-    list-style: none; 
-    margin: 0 auto;
-  }
-
-  .mainHeader nav ul .listFirst li{
-    float: left; 
-    display: inline; 
-  }
-
-  .mainHeader nav li .listTop a {
-    float: right; 
-    display: inline; 
-  }
-
-  .mainHeader nav .listFirst li a:link, .mainHeader nav .listFirst li a:visited {
-    color: #fff;
-    display: inline-block;
-    height: 30px;
-    padding: 5px 23px;
-    text-decoration: none;
-  }
-
-  .mainHeader nav .listFirst  li a:hover, .mainHeader nav a:active,
-  .mainHeader nav .active a:link, .mainHeader nav .active a:visited {
-
-    background: #CF0000;
-    color: #fff;
-    text-shadow: none !important;
-  }
-
-  .mainHeader nav li .listTop a:hover{
-    background-color: none;
-    color: #fff;
-    text-shadow: none !important;
-  }
-
-  .mainHeader nav li a {
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-  }
-
-  .mainHeader img {
-    width: 104.5%;
-    height: auto;
-    margin: 2% -4.5%;
-  }
-
-  /* ------------------------------------------------------------ */
-  /* -------------------------   Conent   ----------------------- */
-  /* ------------------------------------------------------------ */
-
-  .mainContent {
-
-    overflow: hidden;
-    line-height: 25px;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-  }
-
-  .topcontent {
-    height: 600;
-    background-color: #FFF;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px; 
-    padding: 3% 5%; 
-    margin-bottom: 3%;
-
-  }
-
-  .middlecontent {
-    background-color: #FFF;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px; 
-    padding: 3% 5%; 
-    margin-bottom: 3%;
-  }
-
-  .content {
     width: 100%;
-    float: left;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px; 
+    height: 70px;
+    background-color: #121212;
+    z-index: 10; 
+
+  }
+
+  .mainMenu nav {
+    height: 90px;
+
+  }
+
+  
+  .mainMenu nav ul {
+    height: 100%;
+  }
+
+  .mainMenu nav ul li {
+    display: inline-block;
+    height: 100%;
+    font: 11px/6.36em "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: 0.25em;
+    list-style-type: none;
+    text-transform: uppercase;
+  }
+
+  
+  .mainMenu nav ul li.first a {
+    padding-left: 0px;
+  }
+  .mainMenu nav ul li.last a {
+    padding-right: 0px;
+  }
+  .mainMenu nav a {
+    display: block;
+    padding-left: 18px;
+    padding-right: 18px;
+    text-decoration: none;
+    color: #fff; 
+  }
+  .mainMenu nav ul li a:hover, .mainMenu nav ul li.active a {
+    color: #c15961;
   }
 
 
-  .post-info {
-   font-style: italic;
-   color: #999;
-   font-size: 85%;
+  .rightThenMid
+  {
+   float: right;
+   margin: auto;
+
  }
 
- /* ------------------------------------------------------------ */
- /* ------------------------   Projects   ---------------------- */
- /* ------------------------------------------------------------ */
 
- .projectContent {
+ .logo {
+  float: left;
+  display: inline-block;
+  width: 450px;
+  height: 70px;
+  background-image: url('img/companyLogo.png');
+  background-repeat: no-repeat;
+  margin: auto;
+}
+
+
+
+/* ------------------------------------------------------------ */
+/* -------------------------   Conent   ----------------------- */
+/* ------------------------------------------------------------ */
+
+.mainContent {
+
+  overflow: hidden;
+  line-height: 25px;
   width: 100%;
+  clear:both;
+
+
+}
+
+.content {
+ margin: 0 auto;
+ width: 80%;
+ background-color: #FFF;
+ margin-bottom: 8%;
+
+}
+
+.vanish{ visibility:hidden; }
+
+.leftcontent {
+  float: left;
+  width: 44%;
+  height: 600;
+  padding: 3% 3%; 
+}
+.rightcontent {
+  width: 44%;
+  float: right;
+  padding: 2% 3%;
+
+}
+
+
+.post-info {
+ font-style: italic;
+ color: #999;
+ font-size: 85%;
+}
+
+/* ------------------------------------------------------------ */
+/* ------------------------   Projects   ---------------------- */
+/* ------------------------------------------------------------ */
+
+.projectContent {
+  width: 80%;
   float: none;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px; 
+  margin: auto;
+  margin-bottom: 3%;
 }
 
 .subProjectContent{
@@ -205,10 +218,10 @@
   text-align: left;
   display: inline-block; 
   background-color: #FFF;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px; 
-  padding: 3% 5%; 
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-top: 3%;
+  padding-bottom: 6%;
   margin-bottom: 3%;
 }
 
@@ -217,15 +230,15 @@
 
 }
 .projectHeader a:hover, a:active {
-    background-color: #ffffff;
-    color: #CF5C3F;
-    text-decoration: none;
-  }
+  background-color: #ffffff;
+  color: #CF5C3F;
+  text-decoration: none;
+}
 
 .subLeft{
 
   float: left;
-  width: 60%;
+  width: 100%;
 }
 
 .subLeft img {
@@ -242,7 +255,7 @@
 
 .interestLeft{
   float: left;
-  width: 50%;
+  width: 100%;
 }
 
 .interestLeft img {
@@ -253,7 +266,7 @@
 
 .interestRight{
   float: right;
-  width: 50%;
+  width: 100%;
 }
 
 .interestRight img {
@@ -281,55 +294,56 @@
 /* ==============================================================
    ======================   Game Canvas   =======================
    ============================================================== */
-.gameCanvas{
-   display: table;   
-   margin: 0 auto;
-   width: 100%;
-}
+   .gameCanvas{
+     display: table;   
+     margin: 0 auto;
+     width: 100%;
+   }
 
-.gameCanvas canvas {
-  display: table;   
-   margin: 0 auto;
-   margin-bottom: 2%;
-   margin-top: 2%;
-   
+   .gameCanvas canvas {
+    display: table;   
+    margin: 0 auto;
+    margin-bottom: 2%;
+    margin-top: 2%;
+
+
+  }
+
+  .gameCanvasRight{
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    display: table;   
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: -2%;
+    width: 600px;
+
+  }
+
+   .mineSweeper{
+     display: table;   
+     margin: 0 auto;
+     width: 100%;
+   }
+
+  .mineSweeper canvas {
+    display: table;   
+    margin: 0 auto;
+    margin-bottom: 2%;
+    margin-top: 2%;
+
+
+  }
+
   
-}
-
-.gameCanvasRight{
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  display: table;   
-   margin: 0 auto;
-  margin-top: 2%;
-  margin-bottom: -2%;
-  width: 600px;
- 
-}
-
-
-.mineSweeper{
-  float: left;
-   margin-right: 3%; 
-}
-
-.mineSweeper canvas {
-  margin: 0% 0%;
-}
-
-.mineSweeperRight{
-  margin-top: -2.5%;
-  margin-bottom: -6%;
- 
-}
 
 
 
-.clear
-{
-  clear: both;
-}
+  .clear
+  {
+    clear: both;
+  }
 
 
 
@@ -338,64 +352,41 @@
    =========================   Footer   =========================
    ============================================================== */
 
-   .mainFooter {
-
-    width: 100%;
-    float: left;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    padding-left: 0;
-    background: rgba( 60 , 60 , 60 , 1 );
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px; 
-    color: #FFF;
-    min-height:40px;
-    text-shadow: 1px 1px 1px black;
-
-
-
-    box-shadow: inset 0 1px rgba(255, 255 ,255,  0.3 );
-    position: relative;
-
+   #footer {
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 40px;
+    background: #121212;
+    
   }
+
+
+
+  #footer .left a {
+
+    float: left;
+    font: 11px/6.36em "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 14px 0 12px;
+    color: #c15961;
+    text-decoration: none;
+    
+  }
+
 
 
 
   /*-------------------------   center image  -------------- */
 
 
-  div.nh{
-   position:absolute;
-   left:50%;
-   top: -6px;
- }
 
-
- .mainFooter #bottom-text {
-   float :left;
-   display: table-cell;
-   vertical-align: middle;
-   position:relative;
-   top: 8px;
-   left: 8px;
-
- }
-
- .mainFooter #bottom-text a:link, a:visited {
-   color: #CF5C3F;
-   padding: 0 1px;
-   text-decoration: none;
-
- }
-
- .mainFooter #bottom-text a:hover, a:active {
-   background-color: #CF5C3F;
-   color: #fff;
-   text-decoration: none;
- }
-
- .linkedin {
+  .linkedin {
 
    width: 32px;
    height:32px;
@@ -442,28 +433,8 @@
 
 
 
-/* ==============================================================
-   ======================== Form Styling ========================
-   ============================================================== */
 
-
-   .bottomcontent {
-     background-color: #FFF;  
-     border-radius: 5px;
-     -moz-border-radius: 5px;
-     -webkit-border-radius: 5px;  
-     padding: 2% 5%;
-   }
-
-   .contactForm {
-    width: 66%;
-    float: left;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px; 
-  }
-
-
+/*
   .leftHalf {
     width: 42%;
     float: left;
@@ -499,198 +470,304 @@
     height: auto;
     margin: 0% 0%;
   }
+  */
 
 
 
 
+  /*  ------------------------------------------------------*/
+  /*  --------------    responsive design   ----------------*/
+  /*  ------------------------------------------------------*/
 
-/* ==============================================================
-   ======================= Media Queries ========================
-   ============================================================== */
 
-   @media only screen and (min-width : 150px) and (max-width : 780px)
-   {
+
+  
+  
+  @media only screen and (max-width : 65.625em) {
     .body {
       clear: both; 
       margin: 0 auto; 
-      width: 90%;
       font-size: 90%;
     }
 
-
-    /*  -----------------------------------------------------*/
-    /*  ----------    begining of main header   -------------*/
-    .mainHeader nav {
-
-     background: #494949;
-     font-size: 1.143em;
-     height: 240px;
-     line-height: 30px;
-     margin-bottom: 0;
-     border-radius: 5px;
-     -moz-border-radius: 5px;
-     -webkit-border-radius: 5px;
-     text-align:center;
-
-   }
-
-   .mainHeader nav ul{
-     list-style: none; 
-     margin: 0 auto;
-     padding-left: 0;
-     vertical-align:middle;
-     display:inline;
-   }
-
-   .mainHeader nav ul  li .listTop{
-     display:inline-block;
-     position:relative;
-     left: 16px;
-   }
+    .mainMenu {
+      width: 100%;
+      height: 140px;
+      background-color: #121212;
+      z-index: 10; 
+    }
 
 
-   .mainHeader nav li {
-     width: 100%;
-   }
+   .mainMenu nav {
 
-   .mainHeader nav .listFirst li a:link, .mainHeader nav .listFirst li a:visited {
-     color: #FFF;
-     display: block;
-     height: 30px;
-     padding: 5px 0;
-     text-decoration: none;
-   }
+    height: 190px;
 
-   .mainHeader nav a:active,
-   .mainHeader nav .active a:link, .mainHeader nav .active a:visited {
-     background: #CF0000;
-     color: #fff;
-     text-shadow: none !important;
-   }
-
-   .mainHeader nav li a {
-     border-radius: 5px;
-     -moz-border-radius: 5px;
-     -webkit-border-radius: 5px;
-
-     border-radius: 5px;
-     -moz-border-radius: 5px;
-     -webkit-border-radius: 5px;
-   }
-
-   .mainHeader img {
-     width: 104.5%;
-     height: auto;
-     margin: 2% -4.5%;
-   }
-   /*  ----------    begining of main content   -------------*/
-
-   .mainContent {
-     overflow: hidden;
-     line-height: 25px;
-     border-radius: 5px;
-     -moz-border-radius: 5px;
-     -webkit-border-radius: 5px;
-     margin-top: 4%;
-     margin-bottom: 2%;
-   }
-
-   .topcontent {
-     background-color: #FFF;
-     border-radius: 5px;
-     -moz-border-radius: 5px;
-     -webkit-border-radius: 5px;  
-     padding: 2% 5%;
-     margin-bottom: 4%;
-   }
-
-   .bottomcontent {
-     background-color: #FFF;  
-     border-radius: 5px;
-     -moz-border-radius: 5px;
-     -webkit-border-radius: 5px;  
-     padding: 2% 5%;
-   }
-
-   .content {
-     width: 100%;
-     float: left;
-     border-radius: 5px;
-     -moz-border-radius: 5px;
-     -webkit-border-radius: 5px;  
-   }  
-
-   .contactForm {
-    width: 100%;
-    float: left;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px; 
   }
 
-  .post-info {
-   display: none;
- }
+  .mainMenu nav ul {
 
- .top-sidebar {
-   width: 86%;
-   float: left;
+    height: 100%;
+    display: inline-block;
+    list-style-type: none;
+
+  }
+
+
+  .mainMenu nav ul li {
+    display: inline-block;
+    height: 100%;
+    font: 11px/6.36em "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: 0.25em;
+    list-style-type: none;
+    text-transform: uppercase;
+  }
+
+  .rightThenMid
+  {
+    display:block;
+    margin:0 auto;
+    text-align:center;
+    float: none;
+
+
+  }
+  .logo {
+    display:  block;
+    margin:auto;
+    width: 450px;
+    height: 70px;
+    background-image: url('img/companyLogo.png');
+    background-repeat: no-repeat;
+
+
+    text-align:center;
+    float: none;
+
+
+  }
+
+  .mainContent {
+   overflow: hidden;
+   line-height: 25px;
    border-radius: 5px;
    -moz-border-radius: 5px;
-   -webkit-border-radius: 5px;  
-   background-color: #FFF;  
+   -webkit-border-radius: 5px;
    margin-top: 4%;
-   margin-left: 0;
-   padding: 0 7%;
-   margin-bottom: 0;    
- }
+   margin-bottom: 2%;
 
- .top-sidebar p {
-   width: 90%;
  }
+   .content {
+     margin: 0 auto;
+     width: 80%;
+     background-color: #FFF;
+     margin-bottom: 8%;
 
- .mainFooter {
-   text-align: center;
-   width: 100%;
-   float: left;
-   margin: 2% 0%;
-   padding-left: 0;
-   background-color: #494949;
+   }
+
+ .interestLeft{
+  float: left;
+  width: 100%;
+}
+
+.interestRight{
+  float: right;
+  width: 100%;
+}
+
+.subLeft{
+  float: left;
+  width: 100%;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+@media only screen and (min-width : 150px) and (max-width : 780px)
+{
+  .body {
+    clear: both; 
+    margin: 0 auto; 
+    font-size: 90%;
+  }
+
+
+
+  /*  ------------------------------------------------------*/
+  /*  ---------------------    header   --------------------*/
+  /*  ------------------------------------------------------*/
+
+
+
+  .mainMenu {
+    width: 100%;
+    height: 140px;
+    background-color: #121212;
+    z-index: 10; 
+  }
+
+
+  .mainMenu nav {
+
+    height: 190px;
+
+  }
+
+  .mainMenu nav ul {
+
+    height: 100%;
+    display: inline-block;
+    list-style-type: none;
+
+  }
+
+
+  .mainMenu nav ul li {
+    display: inline-block;
+    height: 100%;
+    font: 11px/6.36em "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: 0.25em;
+    list-style-type: none;
+    text-transform: uppercase;
+  }
+
+  .rightThenMid
+  {
+    display:block;
+    margin:0 auto;
+    text-align:center;
+    float: none;
+
+
+  }
+  .logo {
+    display:  block;
+    margin:auto;
+    
+    background-image: url('img/companyLogo.png');
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 70px;
+    background-position: center;
+
+    background-size: 300px 46px;
+
+    text-align:center;
+    float: none;
+
+
+
+
+  }
+
+  /*  ------------------------------------------------------*/
+  /*  --------------------    content   --------------------*/
+  /*  ------------------------------------------------------*/
+  .mainContent {
+   overflow: hidden;
+   line-height: 25px;
    border-radius: 5px;
    -moz-border-radius: 5px;
-   -webkit-border-radius: 5px;  
-   color: #FFF; 
+   -webkit-border-radius: 5px;
+   margin-top: 4%;
+   margin-bottom: 2%;
+
  }
 
- .mainFooter p {
-   width: 86%;
-   margin: 2% auto;
- }
+ .content {
 
- .mainFooter .linkedin{visibility:hidden;}
- .mainFooter .github{visibility:hidden;}
- .mainFooter .soundcloud{visibility:hidden;}
+ margin-bottom: 10%;
 
- div.nh{
-   margin: .5% 20%;
- }
+}
+
+.leftcontent {
+  width: 90%;
+  display:block;
+  margin:0 auto;
+  text-align:left;
+  float: none;
 
 
- /* ------------------------------------------------------------ */
- /* ------------------------   Projects   ---------------------- */
- /* ------------------------------------------------------------ */
 
- .subLeft{
+}
+.rightcontent {
+
+  width: 90%;
+  display:block;
+  margin:0 auto;
+  text-align:left;
+  float: none;
+}
+
+.vanish{ 
+  visibility:visible; 
+}
+
+.post-info {
+ display: none;
+}
+
+.top-sidebar {
+ width: 86%;
+ float: left;
+ border-radius: 5px;
+ -moz-border-radius: 5px;
+ -webkit-border-radius: 5px;  
+ background-color: #FFF;  
+ margin-top: 4%;
+ margin-left: 0;
+ padding: 0 7%;
+ margin-bottom: 0;    
+}
+
+.top-sidebar p {
+ width: 90%;
+}
+
+.mainFooter {
+ text-align: center;
+ width: 100%;
+ float: left;
+ margin: 2% 0%;
+ padding-left: 0;
+ background-color: #494949;
+ border-radius: 5px;
+ -moz-border-radius: 5px;
+ -webkit-border-radius: 5px;  
+ color: #FFF; 
+}
+
+.mainFooter p {
+ width: 86%;
+ margin: 2% auto;
+}
+
+.projectContent {
+
+  margin-bottom: 8%;
+}
+
+.mainFooter .linkedin{visibility:hidden;}
+.mainFooter .github{visibility:hidden;}
+.mainFooter .soundcloud{visibility:hidden;}
+
+
+
+/* ------------------------------------------------------------ */
+/* ------------------------   Projects   ---------------------- */
+/* ------------------------------------------------------------ */
+
+.subLeft{
   float: left;
   width: 100%;
 }
-
-/*
- .gameCanvas{
-  float: left;
-  width: 100%;
-}
-*/
 
 .interestLeft{
   float: left;

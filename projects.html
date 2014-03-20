@@ -12,264 +12,259 @@
 
 <body class="body">
 	
-	<header class="mainHeader">
 
-		<img src="img/logo.png">
-		<nav><ul>
-			<div class="listFirst">
+
+
+
+	<!--  Main Menu  -->
+	<div id="mainMenu" class="mainMenu">
+		<div class="logo"></div>
+		<nav class="rightThenMid">
+			<ul>
 				<li><a href="index.html">Home</a></li>
 				<li><a href="resume.pdf">Resume</a></li>
 				<li class="active"><a href="#">Projects</a></li>
 				<li><a href="interest.html">Interest</a></li>
 				<li><a href="games.html">You game?</a></li>
-			</div>
-			<li>
-				<div class="listTop">
-					<a href="https://linkedin.com/pub/nathanial-hapeman/42/a9a/501/" class="linkedin" title="Linkedin link"></a>
-					<a href="https://github.com" class="github" title="github link"></a>
-					<a href="https://soundcloud.com/rezenn" class="soundcloud" title="soundcloud link"></a>
+			</ul>
+
+		</nav>
+	</div>
+
+
+
+	<div class="mainContent">
+		<div class="projectContent">
+
+			<!--  ~~~~~~~~~~~~~~~~~~~~~   mario   ~~~~~~~~~~~~~~~~~~~~~~  -->
+
+			<article class="subProjectContent">	
+				<header  class = "projectHeader">
+					<h2 > <a name="mario"> Super Mario Bros: Reloaded  (c++) </a> </h2>
+				</header>
+				<br>
+
+
+				<div class="subLeft">
+					<div class="videowrapper">
+						<iframe src="http://www.youtube.com/embed/EMslyjWIPGo" frameborder="0" width="560" height="315"></iframe>
+					</div>
 				</div>
-			</li>
 
 
-		</ul>
+				<div class="subRight">				
+					<p> 
+						This game was developed solely by me using c++/c and SDL as the API. I do not have any plans to publish the game and constructed it for the fun of programming and the awesome learning experience. Some things to note are its heavy use in Polymorphism, Containers, Memory Management, and Threading. The video covers most of the key concepts involved so check it out.
+						
+					</p>
+				</div>	
 
-		
-	</nav>
+				<br>
 
-</header>
-
-<div class="mainContent">
-	<div class="projectContent">
-
-		<!--  ~~~~~~~~~~~~~~~~~~~~~   mario   ~~~~~~~~~~~~~~~~~~~~~~  -->
-
-		<article class="subProjectContent">	
-			<header  class = "projectHeader">
-				<h2 > <a name="mario"> Super Mario Bros: Reloaded  (c++) </a> </h2>
-			</header>
-			<br>
+			</article>
 
 
-			<div class="subLeft">
-				<div class="videowrapper">
-					<iframe src="http://www.youtube.com/embed/EMslyjWIPGo" frameborder="0" width="560" height="315"></iframe>
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~   myTunes   ~~~~~~~~~~~~~~~~~~~~  -->
+
+
+			<article class="subProjectContent">	
+				<header class = "projectHeader">
+					<h2 >  <a name="myTunes"> myTunes (java) </a></h2>
+				</header>
+				<br>
+
+
+				<div class="subLeft">
+
+					<div class="videowrapper">
+						<iframe src="http://www.youtube.com/embed/1c4erMvMnVQ" frameborder="0" width="560" height="315"></iframe>
+					</div>
+
 				</div>
-			</div>
+
+				<div class="subRight">		
+					<p> 
+						I created this media player for the soul purpose of having greater management over my music. The layout and functionality is similar to iTunes but it has some additional features like hotkeys for inserting songs into playlists or checkmarks to see which playlist a song is in. Speed was a big concern while implementing this media player. When a user adds music to the library, all the information for each song is calculated only once (not each time myTunes start) then stored in a hashmap that way I can access information in constant time. Also, I do not copy the songs to a folder, rather I copy the address then load it when the user wants to play. Lastly, when I save the information, I serialize it that way it loads fast. Two of the most difficult things to implement were the regex filter for the search bar and the multithreading for playing the sound.
 
 
-			<div class="subRight">				
-				<p> 
-					This game was developed solely by me using c++/c and SDL as the API. I do not have any plans to publish the game and constructed it for the fun of programming and the awesome learning experience. Some things to note are its heavy use in Polymorphism, Containers, Memory Management, and Threading. The video covers most of the key concepts involved so check it out.
+					</p>
+				</div>
+
+				<br>
+
+			</article>
+
+
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~   shooter   ~~~~~~~~~~~~~~~  -->
+
+
+			<article class="subProjectContent">	
+				<header  class = "projectHeader" >
 					
-				</p>
-			</div>	
-
-			<br>
-
-		</article>
+					<h2 > <a name="shooter"> Multidirectional Shooter (lua with corona SDK)  </a></h2>
+					
+				</header>
+				<br>
 
 
-		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~   myTunes   ~~~~~~~~~~~~~~~~~~~~  -->
+				<div class="subLeft">
 
+					<img src="img/multiShooter.png">
 
-		<article class="subProjectContent">	
-			<header class = "projectHeader">
-				<h2 >  <a name="myTunes"> myTunes (java) </a></h2>
-			</header>
-			<br>
-
-
-			<div class="subLeft">
-
-				<div class="videowrapper">
-					<iframe src="http://www.youtube.com/embed/1c4erMvMnVQ" frameborder="0" width="560" height="315"></iframe>
 				</div>
 
-			</div>
+				<div class="subRight">				
+					<p> 
+						This is my latest project I am working on. It is a multi-directional shooter developed for the iOS platform. The game is played with two joysticks, one for moving and the other for shooting. Enemies are generated at random until the space ship gets hit. The rate at which the enemies generates increases as time goes by. Lastly, if the player wants, he or she can unleash an atomic bomb to destroy all the enemies at once.
 
-			<div class="subRight">		
-				<p> 
-					I created this media player for the soul purpose of having greater management over my music. The layout and functionality is similar to iTunes but it has some additional features like hotkeys for inserting songs into playlists or checkmarks to see which playlist a song is in. Speed was a big concern while implementing this media player. When a user adds music to the library, all the information for each song is calculated only once (not each time myTunes start) then stored in a hashmap that way I can access information in constant time. Also, I do not copy the songs to a folder, rather I copy the address then load it when the user wants to play. Lastly, when I save the information, I serialize it that way it loads fast. Two of the most difficult things to implement were the regex filter for the search bar and the multithreading for playing the sound.
+					</p>
+				</div>	
 
+				<br>
 
-				</p>
-			</div>
+			</article>
 
-			<br>
+			<!-- ~~~~~~~~~~~~~~~~~~   letter software   ~~~~~~~~~~~~~~~~~  -->
 
-		</article>
-
-
-		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~   shooter   ~~~~~~~~~~~~~~~  -->
-
-
-		<article class="subProjectContent">	
-			<header  class = "projectHeader" >
-				
-				<h2 > <a name="shooter"> Multidirectional Shooter (lua with corona SDK)  </a></h2>
-				
-			</header>
-			<br>
+			<article class="subProjectContent">	
+				<header  class = "projectHeader" >
+					<h2 >  Letter Recognition Software  (Matlab) </h2>
+				</header>
+				<br>
 
 
-			<div class="subLeft">
+				<div class="subLeft">
+					<img src="img/letterRecog.png">
+				</div>
 
-				<img src="img/multiShooter.png">
+				<div class="subRight">				
+					<p> 
+						This algorithm could identify the letters written in a picture. It was actually one of the first programs I developed as a Mechanical engineering undergrad and purely for fun. Here is how I did it. It assumes only letters are written in a picture so right away I throw out two of the color matrices in the rgb matrix provided. Then I apply a filter to make the remaining elements in the matrix either 0 or 255. Then I go through each one of the rows in the matrix and find all the places were it changes from having values to no values. These changes mark a line with text from white space. what is store all the lines in a matrix and then go through each line to find the spaces between the letters and save all the letters to a matrix. Then I apply a normalizing scheme to make all the letters the same size. I do that step so my algorithm can analyze different fonts. Then I compare each letter to a template of the alphabet to find which letter it closely resembles. You can find it <a href="http://www.mathworks.com/matlabcentral/fileexchange/35975-picture-letter-recognition-software">here</a> on Matlab central as well as some of my first programs with Matlab.
 
-			</div>
+					</p>
+				</div>	
 
-			<div class="subRight">				
-				<p> 
-					This is my latest project I am working on. It is a multi-directional shooter developed for the iOS platform. The game is played with two joysticks, one for moving and the other for shooting. Enemies are generated at random until the space ship gets hit. The rate at which the enemies generates increases as time goes by. Lastly, if the player wants, he or she can unleash an atomic bomb to destroy all the enemies at once.
+				<br>
 
-				</p>
-			</div>	
-
-			<br>
-
-		</article>
-
-		<!-- ~~~~~~~~~~~~~~~~~~   letter software   ~~~~~~~~~~~~~~~~~  -->
-
-		<article class="subProjectContent">	
-			<header  class = "projectHeader" >
-				<h2 >  Letter Recognition Software  (Matlab) </h2>
-			</header>
-			<br>
+			</article>
 
 
-			<div class="subLeft">
-				<img src="img/letterRecog.png">
-			</div>
-
-			<div class="subRight">				
-				<p> 
-					This algorithm could identify the letters written in a picture. It was actually one of the first programs I developed as a Mechanical engineering undergrad and purely for fun. Here is how I did it. It assumes only letters are written in a picture so right away I throw out two of the color matrices in the rgb matrix provided. Then I apply a filter to make the remaining elements in the matrix either 0 or 255. Then I go through each one of the rows in the matrix and find all the places were it changes from having values to no values. These changes mark a line with text from white space. what is store all the lines in a matrix and then go through each line to find the spaces between the letters and save all the letters to a matrix. Then I apply a normalizing scheme to make all the letters the same size. I do that step so my algorithm can analyze different fonts. Then I compare each letter to a template of the alphabet to find which letter it closely resembles. You can find it <a href="http://www.mathworks.com/matlabcentral/fileexchange/35975-picture-letter-recognition-software">here</a> on Matlab central as well as some of my first programs with Matlab.
-
-				</p>
-			</div>	
-
-			<br>
-
-		</article>
+			<!-- ~~~~~~~~~~~~~~~~~~   Mine/ Pacman   ~~~~~~~~~~~~~~~~~  -->
 
 
-		<!-- ~~~~~~~~~~~~~~~~~~   Mine/ Pacman   ~~~~~~~~~~~~~~~~~  -->
+			<article class="subProjectContent">	
+				<header  class = "projectHeader" >
+					<h2 >  Pacman and Minesweeper  (JavaScript) </h2>
+				</header>
+				<br>
 
 
-		<article class="subProjectContent">	
-			<header  class = "projectHeader" >
-				<h2 >  Pacman and Minesweeper  (JavaScript) </h2>
-			</header>
-			<br>
-
-
-			<div class="interestLeft" style = "width: 56.5%">
-			<a href="games.html#pacLink">
-				<img src="img/pacPic.png">
-				</a>
-			</div>
-
-			<div class="interestRight" style = "width: 43.5%">
-				<a href="games.html#mineLink">
-					<img src="img/MSPic.png">
+				<div class="interestLeft" style = "width: 56.5%">
+					<a href="games.html#pacLink">
+						<img src="img/pacPic.png">
 					</a>
-			</div>
+				</div>
+
+				<div class="interestRight" style = "width: 43.5%">
+					<a href="games.html#mineLink">
+						<img src="img/MSPic.png">
+					</a>
+				</div>
+				
+
+				<div class="subLeft" style = "width: 100%">	
+
+					
+					<p> 
+						Click on each picture to begin playing the game on another
+						page. The description for each game is also posted there.
+
+					</p>
+				</div>	
+
+				<br>
+
+			</article>
+
+
+
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~  phong shader   ~~~~~~~~~~~~~~~~~~~~  -->
+
 			
 
-			<div class="subLeft" style = "width: 100%">	
-
-						
-				<p> 
-					Click on each picture to begin playing the game on another
-					page. The description for each game is also posted there.
-
-				</p>
-			</div>	
-
-			<br>
-
-		</article>
+			<article class="subProjectContent">	
+				<header  class = "projectHeader" >
+					<h2 >  Phong Shader  (c++ with openGL) </h2>
+				</header>
+				<br>
 
 
+				<div class="subLeft">
 
-		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~  phong shader   ~~~~~~~~~~~~~~~~~~~~  -->
+					<img src="img/phongShading.png">
+				</div>
 
-		
+				<div class="subRight">				
+					<p> 
+						This is the only project that I actually made for a school project but I did the extra credit so I wanted to share it. It was made using c++, glut and openGl and works by taking a triangular mesh and applying Phong smooth shading. Additionally it can rotate, translate and use level subdivision to transform the original mesh into a finer mesh. The extra credit was to apply smooth shading which was very difficult since all the normals for each point had to be linearly interpolated. I also wrote text to screen and applied optimizations like boundary boxes to make the program run faster. This was not required but I did so for the fun of it. 
 
-		<article class="subProjectContent">	
-			<header  class = "projectHeader" >
-				<h2 >  Phong Shader  (c++ with openGL) </h2>
-			</header>
-			<br>
+					</p>
+				</div>	
 
+				<br>
 
-			<div class="subLeft">
-
-				<img src="img/phongShading.png">
-			</div>
-
-			<div class="subRight">				
-				<p> 
-					This is the only project that I actually made for a school project but I did the extra credit so I wanted to share it. It was made using c++, glut and openGl and works by taking a triangular mesh and applying Phong smooth shading. Additionally it can rotate, translate and use level subdivision to transform the original mesh into a finer mesh. The extra credit was to apply smooth shading which was very difficult since all the normals for each point had to be linearly interpolated. I also wrote text to screen and applied optimizations like boundary boxes to make the program run faster. This was not required but I did so for the fun of it. 
-
-				</p>
-			</div>	
-
-			<br>
-
-		</article>
+			</article>
 
 
 
-		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~  producing   ~~~~~~~~~~~~~~~~~~~~  -->
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~  producing   ~~~~~~~~~~~~~~~~~~~~  -->
 
-		
+			
 
-		<article class="subProjectContent">	
-			<header  class = "projectHeader" >
-				<h2 >  Producing </h2>
-			</header>
-			<br>
+			<article class="subProjectContent">	
+				<header  class = "projectHeader" >
+					<h2 >  Producing </h2>
+				</header>
+				<br>
 
 
-			<div class="subLeft">
+				<div class="subLeft">
 
-				<img src="img/flStudio.png">
-			</div>
+					<img src="img/flStudio.png">
+				</div>
 
-			<div class="subRight">				
-				<p> 
-					A big passion of mine is music so much so that I think I am partially deaf from always blasting my stereo or headphones. I enjoy just about every single genre but listen to house the most since it takes elements from all genres and mashes them together. Anyways, I produce house and similar genres in my spare time. You can check out a few of my songs <a href="https://soundcloud.com/rezenn"> here</a>. This is main reason why I created <a href="#myTunes"> myTunes</a> and why my mario game has an awesome sound track and sound effects :)
+				<div class="subRight">				
+					<p> 
+						A big passion of mine is music so much so that I think I am partially deaf from always blasting my stereo or headphones. I enjoy just about every single genre but listen to house the most since it takes elements from all genres and mashes them together. Anyways, I produce house and similar genres in my spare time. You can check out a few of my songs <a href="https://soundcloud.com/rezenn"> here</a>. This is main reason why I created <a href="#myTunes"> myTunes</a> and why my mario game has an awesome sound track and sound effects :)
 
-				</p>
-			</div>	
+					</p>
+				</div>	
 
-			<br>
-		</article>
+				<br>
+			</article>
+		</div>
 	</div>
-</div>
 
-<!-- ~~~~~~~~~~~~~~~~~~~~~~~~   footer   ~~~~~~~~~~~~~~~~~~~~  -->
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~   footer   ~~~~~~~~~~~~~~~~~~~~  -->
 
-<footer class="mainFooter">
-	<div id="bottom-text">
 
-		<address> Contact
-			<a href="mailto:nhapeman@gmail.com">Me</a>
-		</address>
+	<div id="footer" class="footer">
+		<div class="left">
+			<address> 
+				<a href="mailto:nhapeman@gmail.com"> Contact Me</a>
+			</address>
+
+
+		</div>
+
+		<div class="listTop">
+			<a href="https://linkedin.com/pub/nathanial-hapeman/42/a9a/501/" class="linkedin" title="Linkedin link"></a>
+			<a href="https://github.com" class="github" title="github link"></a>
+			<a href="https://soundcloud.com/rezenn" class="soundcloud" title="soundcloud link"></a>
+		</div>
+
+
 	</div>
-	<!--  Getting social      -->
-
-	<div class="nh">
-		<img  src="img/nh.png">
-	</div>
-	<a href="www.linkedin.com/pub/nathanial-hapeman/42/a9a/501/" class="linkedin" title="Linkedin link"></a>
-	<a href="https://github.com" class="github" title="github link"></a>
-	<a href="https://soundcloud.com/rezenn" class="soundcloud" title="soundcloud link"></a>
-
-</footer>
 
 
 </body>
