@@ -2,22 +2,14 @@
 <html lang="en-US">
 <head>
 	<title>Nathanial Hapeman - Online Computer Science Portfolio	</title>
-
 	<meta charset="utf-8" />
 	<link rel="shortcut icon" href="favicon.ico" >
 	<link rel="stylesheet" href="style.css" type="text/css" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
-	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script type="text/javascript" src="mineSweeper.js"></script>
-	
 	<script type="text/javascript" src="pacman.js"></script>
-
 </head>
-
 <body class="body">
-	
-
-
 
 	<!--  Main Menu  -->
 	<div id="mainMenu" class="mainMenu">
@@ -30,147 +22,82 @@
 				<li><a href="interest.html">Interest</a></li>
 				<li class="active"><a href="#">You game?</a></li>
 			</ul>
-
 		</nav>
 	</div>
-
-
-	
-
 	<div class="mainContent">
-
 		<div class="content">
-
-			
-
-			
-
 			<article class="topcontent" >
-
 				<!-- ~~~~~~~~~~~~~~~~~~~~~   pacman   ~~~~~~~~~~~~~~~  -->
-				<div class="gameCanvasRight" >		
+				<div class="gameCanvasRight" >
 					<br>
 					<header  class = "projectHeader" style = "width: 560px; margin-left:20px; text-align: center;margin-top:0px;">
 						<h2 > <a name="pacLink"> Pacman (Javascript)</a> </h2>
 					</header>
 					<br>
-					
 				</div>
-
-
 				<div class ="gameCanvas">
 					<canvas id = "gCanvas"   width = "600" height = "430" style="border:1px solid #000000;">
-
 					</canvas>
-				</div>	
-
-
-
-				<div class="gameCanvasRight">		
-
+				</div>
+				<div class="gameCanvasRight">
 					<p  style = "width: 560px; margin-left:20px; text-align: justify;">
 						I created this Pacman Clone using JavaScript for fun and as a
 						good learning experience. I made sure the game would run 30 FPS
 						smoothly by making some crazy optimizations. For instance, rather
-						than rendering everything in the level each frame, I only render 
+						than rendering everything in the level each frame, I only render
 						were the changes happen in the game. I also made sure I used the
-						best Data Structures and algorithms so no unnecessary work was done. 
-						The hardest thing was creating the AI for the ghost. In order to 
+						best Data Structures and algorithms so no unnecessary work was done.
+						The hardest thing was creating the AI for the ghost. In order to
 						do this, I had to transform the original two dimensional array map
 						into a graph. The ghost can then navigate through the map using
 						the nodes as reference points. They can use these nodes to move
 						towards Pacman by checking which node Pacman is going towards, or to
 						move around the map randomly. The orange ghost in the
-						original Pacman moves this way but most peope don't notice since they 
+						original Pacman moves this way but most peope don't notice since they
 						are trying to survive. Now to get each ghost to move towards
-						Pacman I used Dijkstra's algorithm to compute the fastest path. 
+						Pacman I used Dijkstra's algorithm to compute the fastest path.
 						This was tricky to implement because again I wanted the game to run
 						smoothly at 30 FPS. All in all, this was an awesome learning
 						experience that taught me a lot about JavaScript OOP.
 					</p>
-
 					<br>
-				
 				</div>
-
-					
 				<hr>
-
 				<!-- ~~~~~~~~~~~~~~~~~~~~~   minesweeper   ~~~~~~~~~~~~~~~  -->
-
-				<div class="gameCanvasRight" >		
+				<div class="gameCanvasRight" >
 					<br>
 					<header  class = "projectHeader" style = "width: 560px; margin-left:20px; text-align: center;margin-top:0px;">
 						<h2 > <a name="pacLink"> Minesweeper (Javascript)</a> </h2>
 					</header>
 					<br>
-					
 				</div>
-
-
-				
-
 				<div class ="mineSweeper">
 					<canvas id = "mCanvas"   width = "400" height = "370" style="border:1px solid #000000;">
-
 					</canvas>
 				</div>
-
-
-
-				<div class="gameCanvasRight">		
-
+				<div class="gameCanvasRight">
 					<p  style = "width: 560px; margin-left:20px; text-align: justify;">
 						This is a project I recently built to help learn javascript. It started off as an online tutorial but I went my seperate way when I realized the tutorial started to implement one of the functions with O(m*n) time with m and n being the size of the board. I realized a way to reduce it to constant time and went my seperate way after that. Test it out but watch out for some of the sound effects! I designed it to give you a shock when you hit a bomb.
 					</p>
-
 					<br>
-				
 				</div>
-
-
-
-
 				<div class= "clear">
-			
-				
-
-
-				
-
-
 			</article>
-
-
-
-			
-
-
 
 		</div>
 	</div>
-
 	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~   footer   ~~~~~~~~~~~~~~~~~~~~  -->
-
-	
 	<div id="footer" class="footer">
 		<div class="left">
-			<address> 
+			<address>
 				<a href="mailto:nhapeman@gmail.com"> Contact Me</a>
 			</address>
-
-
 		</div>
-
 		<div class="listTop">
 			<a href="https://linkedin.com/pub/nathanial-hapeman/42/a9a/501/" class="linkedin" title="Linkedin link"></a>
 			<a href="https://github.com" class="github" title="github link"></a>
 			<a href="https://soundcloud.com/rezenn" class="soundcloud" title="soundcloud link"></a>
 		</div>
-
-
 	</div>
-
-
 </body>
 </html>
